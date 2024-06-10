@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin tài khoản</title>
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/thongtintk.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <div class="frame_header"> 
+          <a href="/index.html">
+            <div class="logo">
+              <img src="/img/logo-tiki.png">
+              <p>Tốt&Nhanh</p>
+            </div>
+          </a>
+          <div class="header_content">
+            <div class=top>
+              <div class="search">
+                <i class="fa-solid fa-magnifying-glass icon_search"></i>
+                <input type="text" value="" placeholder="Bạn tìm gì hôm nay" class="frame_search" id="searchInput">
+                <button class="button_search" >Tìm kiếm</button>
+              </div>
+              <div class="shortcut">
+                <a href="/index.html">
+                  <div class="sc_1">
+                    <i class="fa-solid fa-house icon"></i>
+                    <p>Trang chủ</p>
+                  </div>
+                </a>
+                <div class="sc_1">
+                  <i class="fa-regular fa-user icon"></i>
+                  <p>Tài Khoản</p>
+                  <div class="account">
+                    <a href="thongtintk.html">
+                      <p class="account_1">Thông tin tài khoản</p>
+                    </a>
+                    <a>
+                      <p class="account_1">Đơn hàng của tôi</p>
+                    </a>
+                    <a>
+                      <p class="account_1">Trung tâm hỗ trợ</p>
+                    </a>
+                    <a href="#">
+                      <p class="account_1">Đăng xuất</p>
+                    </a>
+                  </div>
+                </div>
+                <div style="border-right: 1px solid #DDDDE3;height: 20px;margin: 0px 15px 0px 15px;"></div>
+                <a href="#">
+                  <div class="sc_2">
+                    <i class="fa-solid fa-cart-shopping icon"></i>
+                    <span id="counter">0</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div style="width: 1000px;height: 60px;" class="under-search">
+              <div class="product-category">
+                <ul>
+                  <li><a href="#">điện gia dụng</a></li>
+                  <li><a href="#">xe cộ</a></li>
+                  <li><a href="#">mẹ & bé</a></li>
+                  <li><a href="#">khỏe đẹp</a></li>
+                  <li><a href="#">nhà cửa</a></li>
+                  <li><a href="#">sách</a></li>
+                  <li><a href="#">thể thao</a></li>
+                </ul>
+              </div>
+              <div class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Giao đến:</h4>
+                <div>Yên Nghĩa, Hà Đông, Hà Nội</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="return-policy">
+          <a href="#">
+            <div class="detail">
+              <i class="fa-solid fa-box-open"></i>
+              <div class="day-return">&nbsp30 ngày</div>
+              <p>&nbspđổi ý & miễn phí trả hàng</p>
+            </div>
+          </a>
+        </div>
+      </header>
+      <main>
+        <div class="frame_body">
+            <div class="container">
+                <div class="wapper">
+                    <div class="w-header">
+                        <a href="#" class="w1"><span>Trang chủ</span></a>
+                        <span style="color: rgb(128, 128, 137);"><i class='bx bx-chevron-right'></i></span>
+                        <a href="#" class="w2"><span>  Thông tin tài khoản</span></a>
+                    </div>
+                </div>
+                <aside>
+                    <div class="aside-account">
+                        <img src="../img/two-avatar.png" alt="avatar">
+                        <div class="info">
+                            <span style="color: rgb(74, 74, 74);">Tài khoản của</span>
+                            <strong></strong>
+                        </div>
+                    </div>
+                    <ul class="ul-aside">
+                        <li>
+                            <a href="/pages/thongtintk.html">
+                                <i class='bx bxs-user'></i>
+                                <span>Thông tin tài khoản</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxs-bell' style="color: rgb(241, 200, 74);"></i>
+                                <span>Thông báo của tôi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxs-shopping-bags'></i>
+                                <span>Quản lý đơn hàng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/qldoitra.png" class="icon-img">
+                                <span>Quản lý đổi trả</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/SoDiaChi.html">
+                                <i class='bx bxs-map'></i>
+                                <span>Sổ địa chỉ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bx-credit-card'></i>
+                                <span>Thông tin thanh toán</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/reviewhub.png" alt="ava" class="icon-img">
+                                <span>Đánh giá sản phẩm</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bx-history'></i>
+                                <span>Sản phẩm bạn đã xem</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxs-heart' style="color: rgb(250, 90, 90);"></i>
+                                <span>Sản phẩm yêu thích</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxs-star-half'></i>
+                                <span>Nhận xét của tôi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/shareprofit-removebg-preview.png" alt="ava" class="icon-img">
+                                <span>Chia sẻ có lời</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/paylater.png" alt="ava" class="icon-img">
+                                <span>Mua trước trả sau</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/ticketsales.png" alt="ava" class="icon-img">
+                                <span>Mã giảm giá</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxs-coin-stack' style="color: rgb(253, 218, 63);"></i>
+                                <span>Quản lý xu của tôi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxs-book' style="color: rgb(220, 144, 239);"></i>
+                                <span>BookCare của tôi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bx-headphone'></i>
+                                <span>Hỗ trợ khách hàng</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <div class="inform-account">
+                    <div class="title-inform-account">Thông tin tài khoản</div>
+                    <div class="content-info">
+                        <div class="info-ind">
+                            <div class="info-left">
+                                <span class="title-inform">Thông tin cá nhân</span>
+                                <div class="box-info-left">
+                                    <form style="width: 100%;">
+                                        <div class="form-info">
+                                            <div class="form-avatar" style="margin-right: 16px;">
+                                                <div class="avatar-set">
+                                                    <div class="avatar-view">
+                                                        <img src="../img/avatar.png" alt="avatar" class="default">
+                                                        <div class="edit">
+                                                            <img src="../img/edit.png" class="edit-img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-name"> 
+                                                <div class="form-control">
+                                                    <label class="input-label">Họ & Tên</label>
+                                                    <div class="input-text">
+                                                        <input type="search" class="input" name="data[fullName]" maxlength="128" placeholder="Thêm họ tên" onfocus="showNote('fullName')" onblur="hideNote('fullName')">
+                                                    </div>
+                                                    <div class="note1" id="note_fullName">Họ & Tên gồm 5 kí tự trở lên.</div>
+                                                </div>  
+                                                <div class="form-control">
+                                                    <label class="input-label">Nickname</label>
+                                                    <div class="input-text">
+                                                        <input type="search" class="input" name="data[userName]" maxlength="128" placeholder="Thêm nickname" value onfocus="showNote('userName')" onblur="hideNote('userName')">
+                                                    </div>
+                                                    <div class="note2" id="note_userName">3-20 kí tự, chỉ bao gồm: chữ, số, "_" và ".". Bạn không thể thay đổi sau khi đã lưu.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="input-label">Ngày sinh</label>
+                                            <div class="input-text">
+                                                <input type="date" style="height: 15px;" name="data[namsinh]" id="namsinh">
+                                            </div>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="input-label">Giới tính</label>
+                                            <label class="all-radio">
+                                                <input type="radio" name="data[myname]" value="Nam">
+                                                <span class="mylabel">Nam</span>
+                                            </label>
+                                            <label class="all-radio">
+                                                <input type="radio" name="data[myname]" value="Nữ">
+                                                <span class="mylabel">Nữ</span>
+                                            </label>
+                                            <label class="all-radio">
+                                                <input type="radio" name="data[myname]" value="Khác">
+                                                <span class="mylabel">Khác</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="input-label">Quốc tịch</label>
+                                            <div class="input-text" style="width: 100%;">
+                                                <input type="text" class="input with-icon-right" name="data[national]" maxlength="128" placeholder="Nhập quốc tịch" id="countryInput" style="height: 15px;">
+                                            </div>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="input-label">&nbsp;</label>
+                                            <button type="submit" class="btn-submit" id="saveButton">Lưu thay đổi</button>
+                                        </div>
+                                        <div id="successMessage" class="success-message"></div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="info-seperate"></div>
+                            <div class="info-right">
+                                <span class="title-inform">Số điện thoại và Email</span>
+                                <div class="all-info-detail">
+                                    <div class="list-item">
+                                        <div class="info-detail">
+                                            <img src="../img/phone.png" class="icon-img" style="margin: 0;">
+                                            <div class="detail">
+                                                <span>Số điện thoại</span>
+                                                <span class="sdt"></span>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <span></span>
+                                            <a href="/pages/CapNhatSDT.html">
+                                                <button class="btn-status" id="UpdateButton1">Cập nhật</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="info-detail">
+                                            <img src="../img/email.png" class="icon-img" style="margin: 0;">
+                                            <div class="detail">
+                                                <span>Địa chỉ email</span>
+                                                <span class="email"></span>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <span></span>
+                                            <a href="/pages/CapNhatEmail.html">
+                                                <button class="btn-status" id="UpdateButton2">Cập nhật</button>
+                                            </a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="title-inform">Bảo mật</span>
+                                <div class="all-info-detail">
+                                    <div class="list-item">
+                                        <div>
+                                            <img src="../img/lock.png" class="icon-img" style="margin: 0;">
+                                            <span>Thiết lập mật khẩu</span>
+                                        </div>
+                                        <div class="status">
+                                            <span></span>
+                                            <button class="btn-status" id="UpdateButton3">Cập nhật</button>
+                                        </div>
+                                    </div>
+                                    <div class="list-item">
+                                        <div>
+                                            <img src="../img/cc0504.png" class="icon-img" style="margin: 0;">
+                                            <span>Thiết lập mã pin</span>
+                                        </div>
+                                        <div class="status">
+                                            <span></span>
+                                            <button class="btn-status" id="UpdateButton4">Thiết lập</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="title-inform">Liên kết mạng xã hội</span>
+                                <div class="all-info-detail">
+                                    <div class="list-item">
+                                        <div>
+                                            <img src="../img/facebook.png" class="icon-img" style="margin: 0;">
+                                            <span>Facebook</span>
+                                        </div>
+                                        <div class="status">
+                                            <span></span>
+                                            <button class="btn-status" id="UpdateButton5">Liên kết</button>
+                                        </div>
+                                    </div>
+                                    <div class="list-item">
+                                        <div>
+                                            <img src="../img/google.png" class="icon-img" style="margin: 0;">
+                                            <span>Google</span>
+                                        </div>
+                                        <div class="status-is-status">
+                                            <span></span>
+                                            <button class="btn-is-status" >Đã liên kết</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+      <footer>
+        <div class="frame_footer">
+            <div class="colume">
+                <h3>Hỗ trợ khách hàng</h3>
+                <p>Hotline: <b>1900-0091</b> </p>
+                <a href="">Gửi yêu cầu hỗ trợ</a>
+                <a href="">Hướng dẫn đặt hàng</a>
+                <a href="">Phương thức vận chuyển</a>
+                <a href="">Chính sách đổi trả</a>
+                <a href="">Hướng dẫn trả góp</a>
+                <a href="">Chính sách hàng nhập khẩu</a>
+                <a href="">Hỗ trợ khách hàng</a>
+                <a href="">Báo lỗi bảo mật</a>
+            </div>
+            <div class="colume">
+                <h3>Vể Tiki</h3>
+                <a href="">Giới thiệu Tiki</a>
+                <a href="">Tiki Blog</a>
+                <a href="">Tuyển dụng</a>
+                <a href="">Chính sách bảo mật thanh toán</a>
+                <a href="">Chính sách bảo mật thông tin cá nhân</a>
+                <a href="">Chính sách giải quyết khiếu nại</a>
+                <a href="">Điều khoản sử dụng</a>
+                <a href="">Giới thiệu Tiki Xu</a>
+                <a href="">Tiếp thị liên kết cùng Tiki</a>
+                <a href="">Bán hàng doanh nghiệp</a>
+                <a href="">Điều kiện vận chuyển</a>
+            </div>
+            <div class="colume">
+                <div class="row1">
+                    <h3>Hợp tác và liên kết</h3>
+                    <a href="">Quy chế hoạt động Sàn GDTMĐT</a>
+                    <a href="">Bán hàng cùng Tiki</a>
+                </div>
+                <div class="row2">
+                    <h3>Chứng nhận bởi</h3>
+                    <div class="logo-real">
+                        <a href="">
+                            <img src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/bo-cong-thuong-2.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/bo-cong-thuong.svg" style="width: 80px;">
+                        </a>
+                        <a href="">
+                            <img src="https://images.dmca.com/Badges/dmca_protected_sml_120y.png?ID=388d758c-6722-4245-a2b0-1d2415e70127" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="colume">
+                <div class="row-1">
+                    <h3>Phương thức thanh toán</h3>
+                <p class="payment">
+                    <span class="icon">
+                        <img src="../img/payment1.png" style="width: 32;height: 32;">
+                    </span>
+                    <span class="icon">
+                        <img src="../img/payment2.png" style="width: 32;height: 32;">
+                    </span>
+                    <span class="icon">
+                        <img src="../img/payment3.png" style="width: 32;height: 32;">
+                    </span>
+                    <span class="icon">
+                        <img src="../img/payment4.png" style="width: 32;height: 32;">
+                    </span>
+                    <span class="icon">
+                        <img src="../img/payment5.png" style="width: 32;height: 32;">
+                    </span>
+                    <span class="icon">
+                        <img src="../img/payment6.png" style="width: 32;height: 32;">
+                    </span>
+                    <span class="icon">
+                        <img src="../img/payment7.png" style="width: 32;height: 32;">
+                    </span>
+                    <span class="icon">
+                        <img src="../img/payment8.png" style="width: 32;height: 32;">
+                    </span>
+                    <span class="icon">
+                        <img src="../img/payment9.png" style="width: 32;height: 32;">
+                    </span>
+                    <span class="icon">
+                        <img src="../img/payment10.png" style="width: 32;height: 32;">
+                    </span>
+                </p>
+                <div class="row-2">
+                    <h3>Dịch vụ giao hàng</h3>
+                    <a href="https://www.tikinow.vn/?src=footer" target="_blank">
+                        <img src="https://salt.tikicdn.com/ts/upload/74/56/ab/e71563afb23e3f34a148fe1b7d3413c5.png" style="width: 150px;">
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="colume" style="width: 300px;">
+                <h3>Theo dõi chúng tôi trên</h3>
+                <p class="social_media">
+                    <a href="">
+                        <i class="fa-brands fa-facebook" style="color: #45619d;"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-youtube" style="color: #ff0d0d;"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-tiktok" style="color: #172c4f;"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram" style="color: #fc194c;"></i>
+                    </a>
+                </p>
+                <h3>Tải ứng dụng trên điện thoại</h3>
+                <div class="download">
+                    <img src="../img/qr.png" style="width: 80px;height: 80px;">
+                    <div class="icon_download">
+                        <a href="https://play.google.com/store/games?hl=vi&gl=US">
+                            <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/appstore.png" style="height: 36px;width: 122px;">
+                        </a>
+                        <a href="https://play.google.com/store/games?hl=vi&gl=US">
+                            <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/playstore.png" style="height: 36px;width: 122px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="office">
+                <h3>Công ty TNHH TIKI</h3>
+                <p>Tòa nhà số 52 đường Út Tịch, Phường 4, Quận Tân Bình, Thành phố Hồ Chí Minh<br>
+                Giấy chứng nhận đăng ký doanh nghiệp số 0309532909 do Sở Kế Hoạch và Đầu Tư Thành phố Hồ Chí Minh 
+                cấp lần đầu vào ngày 06/01/2010.</p>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
