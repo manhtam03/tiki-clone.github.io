@@ -13,63 +13,9 @@ body{
     position: relative;
     z-index: 1;
 }
-.ct-head-left{
-    height: 24px;
-    width: 712px;
-    margin-top: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
-.ct-head-left a{
-    display: block;
-    font-weight: 400;
-    font-size: 14.8px;
-    text-decoration: none;
-    color: rgb(128, 128, 137);
-    margin-right: 12px;
-}
-.ct-head-right{
-    margin-top: 8px;
-    max-width: 348px;
-    margin-right: 8px;
-}
-.head-address{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-}
-.head-address img{
-    width: 20px;
-    height: 20px;
-    margin-right: 4px;
-}
-.head-address > h4{
-    display: block;
-    color: rgb(128, 128, 137);
-    font-weight: 400;
-    padding-right: 4px;
-}
-.head-address .address{
-    color: rbg(39, 39, 42);
-    font-weight: 500;
-    text-decoration: underline;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 16px;
-    word-spacing: 1px;
-}
 
 main{
     display: block;
-    /* position: relative;
-    max-width: 1270px;
-    margin: 0 auto; 
-    padding: 0 10px; */
-    
 }
 .frame_body{
     width: 1280px;
@@ -354,101 +300,7 @@ input[type="date"] {
     align-items: center;
     justify-content: center;
 }
-#countryModal {
-    display: none;
-}
-.modal-content {
-    margin: 80px auto 0px auto;
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    width: 400px;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    
-}
-.modal-header{
-    border-bottom: 1px solid rgb(235, 235, 240);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2px 0px 16px;
-}
-.modal-header .modal-title{
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-}
-.modal-header .close-img{
-    height: 36px;
-    width: 36px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-.modal-search{
-    position: relative;
-    margin: 12px 0px;
-}
-.icon-left{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 24px;
-    left: 10px;
-}
-.icon-search-country{
-    width: 14px;
-    height: 15px;
-}
-/* CSS cho thanh tìm kiếm */
-#searchCountry {
-    /* height: 36px; */
-    width: 345px;
-    border-radius: 4px;
-    padding: 8px 12px 8px 40px;
-    line-height: 20px;
-    flex: 1 1 0%;
-    border: 1px solid rgb(196, 196, 207);
-}
-#searchCountry:focus {
-    outline: none;
-    border-color: #7b4efa; /* Đổi màu viền khi input được focus */
-}
-/* CSS cho danh sách quốc tịch */
-.modal-content .list-country {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    align-items: flex-start;
-    height: 300px;
-    overflow-y: scroll;
-}
-.list-country::-webkit-scrollbar {
-    display: none;
-}
-.list-country .item{
-    padding: 10px 0px;
-    width: 360px;
-    border-bottom: 1px solid rgb(235, 235, 240);
-    text-align: start;
-}
-.list-country p{
-    color: rgb(166, 166, 176);
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0;
-    line-height: 24px;
-    margin-bottom: 10px;
-}
-.modal .list-country span{
-    margin-left: 12px;
-    color: rgb(94 94 98);
-    font-weight: 300;
-    line-height: 20px;
-    font-size: 16px;
-}
+
 .btn-submit{
     width: 176px;
     border: none;
@@ -458,21 +310,6 @@ input[type="date"] {
     color: #fff;
     font-size: 15px;
     cursor: pointer;
-}
-.success-message{
-    display: none;
-    background-color: #e9e4f8;
-    color: #7b4efa;
-    height: 30px;
-    width: 200px;
-    border-radius: 15px;
-    padding: 20px 10px 10px 20px;
-    text-align: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
 }
 
 .all-radio{
@@ -527,12 +364,6 @@ input[type="date"] {
 .all-info-detail .detail{
     display: flex;
     flex-direction: column;
-}
-.detail span{
-    font-size: 14px;
-    line-height: 20px;
-    margin-left: 6px;
-    color: rgb(56, 56, 61);
 }
 
 .list-item .btn-status{
