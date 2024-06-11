@@ -1,0 +1,70 @@
+.frame-main{
+    width: 90%;
+    margin: 50px auto;
+}
+.gio-hang{
+    margin: 20px 0px;
+}
+.gio-hang h2{
+    text-transform: uppercase;
+}
+.gio-hang-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.products h3{
+    margin-bottom: 10px;
+}
+.product{
+    display: flex;
+}
+.product_item{
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    width: 30%;
+    height: 100%;
+    border-radius: 4px;
+    background: white;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.product_item:hover .themVaoGioHang{
+    display: inline;
+}
+.product_item:hover .muaNgay{
+    display: inline;
+}
+.product_item > img{
+    text-align: center;
+    position: relative;
+    width: 150px;
+}
+.product_item .info {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 8px;
+    gap: 4px;
+}
+
+.chinh_hang{
+    height: 20px;
+    width: 89px;
+}
+.ship{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+.ship p{
+    color: gray;
+    font-size: 13px;
+    padding-left: 5px;
+}
+@media screen and (max-width: 900px) {
+    .product{
+        flex-wrap: wrap;
+    }
+}
