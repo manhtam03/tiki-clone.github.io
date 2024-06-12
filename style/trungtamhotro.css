@@ -1,0 +1,91 @@
+.support{
+    width: 70%;
+    height: 850px;
+}
+.support h2{
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.customer-care{
+    width: 100%;
+}
+.customer-care h3{
+    margin-bottom: 20px;
+}
+.customer-care .thong-tin{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+.thong-tin-detail {
+   width: 25%;
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+.thong-tin-detail img{
+    width: 25%;
+    height: 60px;
+}
+.thong-tin-detail .line1{
+    margin: 10px;
+    font-weight: bold;
+    color: gray;
+}
+.thong-tin-detail .line2{
+    font-weight: bold;
+    font-size: 20px;    
+}
+.thong-tin-detail .line3{
+    margin: 10px;
+    font-size: 13px;
+    color: gray;
+}
+.thong-tin-detail a{
+    text-decoration: none;
+    width: 40%;
+    height: 25%;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+.thong-tin-detail:last-child .line1{
+    margin-top: 20px;
+}
+.thong-tin-detail:last-child a{
+    width: 60%;   
+}
+
+.imformation{
+    margin-top: 80px;
+    height: 600px;
+}
+.imformation h3{
+    margin-bottom: 20px;
+}
+.imformation .tra-cuu{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.tra-cuu .detail{
+    width: 45%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.detail p{
+    color: gray;
+}
+.detail a{
+    text-decoration: none;
+    color: blue;
+}
