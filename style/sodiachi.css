@@ -1,0 +1,26 @@
+.locate{
+    width: 70%;
+}
+.locate h2{
+    font-weight: 100;
+}
+.locate .add{
+    height: 50px;
+    margin-top: 20px;
+    border: 1px dashed gray;
+}
+
+.add a{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.add a i{
+    padding-right: 5px;
+}
+.add a p{
+    color: blue;
+    font-size: 17px;
+}
