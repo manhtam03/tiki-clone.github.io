@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đơn Hàng của tôi</title>
+    <title>Thông báo của tôi</title>
     <link rel="shortcurt icon" type="image/png" href="https://salt.tikicdn.com/ts/upload/3b/5f/c7/0ea1997d4ef7f5c9055bc4d11416278a.png" sizes="32x32">
     <link rel="stylesheet" href="../style/header.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="../style/giohang.css">
     <link rel="stylesheet" href="../style/thongtintk.css">
-    <link rel="stylesheet" href="../style/qldh.css">
+    <link rel="stylesheet" href="../style/thongbao.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -119,7 +120,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="thongbao.html">
+                            <a href="#">
                                 <i class='bx bxs-bell' style="color: rgb(241, 200, 74);"></i>
                                 <span>Thông báo của tôi</span>
                             </a>
@@ -210,32 +211,42 @@
                         </li>
                     </ul>
                 </aside>
-                <div class="qldh">
-                    <h2>Đơn hàng của tôi</h2>
-                    <div class="nav-bars">
+                <div class="myNotification">
+                    <h2>Thông báo của tôi</h2>
+                    <div class="nav-bar">
                         <ul class="list">
-                            <li><a href="">Tất cả đơn</a></li>
-                            <li><a href="">Chờ thanh toán</a></li>
-                            <li><a href="">Đang xử lý</a></li>
-                            <li><a href="">Đang vận chuyển</a></li>
-                            <li><a href="">Đã giao</a></li>
-                            <li><a href="">Đã hủy</a></li>
+                            <li><a href=""><i class="fa-solid fa-house"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-gift"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-rectangle-list"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-clock-rotate-left"></i></a></li>
                         </ul>
+                        <i class="fa-solid fa-ellipsis-vertical" id="op-tb" ></i>
+                            <ul class="list-tb">
+                                <li><a href="">Đánh dấu đọc tất cả</a></li>
+                                <li><a href="">Xóa tất cả thông báo</a></li>
+                            </ul>  
                     </div>
-                    <div class="form-search-products">
-                        <form action="">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" placeholder="Tìm đơn hàng theo Mã đơn hàng, Nhà bán hoặc Tên sản phẩm ">
-                            <a href="">Tìm đơn hàng</a>
-                        </form>
-                    </div>
-                    <div class="order">
-                        <img src="../assets/img/TK/empty-order.png" alt="">
-                        <p>Chưa có đơn hàng</p>
+                    <div class="notice">
+                        <img src="../assets/img/TK/mascot_fail.svg" alt="">
+                        <p>Bạn chưa có thông báo</p>
+                        <div class="button">
+                            <a href="../index.html"> Tiếp tục mua sắm</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            $(document).ready(function(){
+                $('.list-tb').hide();
+            });
+            $('#op-tb').click(function(){
+                    $('.list-tb').fadeIn();
+                });
+            $('.notice').click(function(){
+                $('.list-tb').hide();
+            });
+        </script>
       </main>
       <footer>
         <div class="frame_footer">

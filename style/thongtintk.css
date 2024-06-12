@@ -265,10 +265,10 @@ input::placeholder{
 }
 .input:focus {
     outline: none;
-    border-color: #7b4efa; /* Đổi màu viền khi input được focus */
+    border-color: #7b4efa; 
 }
 input[type="date"] {
-    outline: none; /* Loại bỏ đường viền khi tập trung (focus) */
+    outline: none; 
 }
 .input-text select{
     width: 100px;
