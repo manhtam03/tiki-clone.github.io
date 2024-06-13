@@ -1,0 +1,60 @@
+.qldh h2{
+    font-weight: 100;
+}
+.qldh .nav-bars{
+    margin-bottom: 5px;
+}
+a{
+    text-decoration: none;
+}
+.list{
+    display: flex;
+    list-style: none;
+}
+.list li{
+   padding: 5px 40px;
+   margin: 25px 0px;
+}
+
+.list li:hover a{
+    color: blue;
+}
+.list li:hover{
+    border-bottom: 2px solid blue ;
+}
+.list li a{
+    color: black;
+}
+.form-search-products form{
+    width: 100%;
+    height: 34px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+
+}
+form i{
+    margin-left: 10px;
+    color: gray;
+}
+form input{
+    width: 84%;
+    border: none;
+    border-right: 1px solid gray;
+    margin: 0px 10px;
+    outline: none;
+}
+form a{
+    color: blue;
+}
+
+.qldh img{
+    width: 250px;
+    margin-top: 50px;
+}
+.qldh .order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

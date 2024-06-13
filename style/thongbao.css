@@ -1,0 +1,78 @@
+.myNotification{
+    width: 70%;
+}
+.myNotification h2{
+    font-weight: 100;
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.nav-bar .list{
+    display: flex;
+    list-style: none;
+}
+.nav-bar> i{
+    margin-top: 30px;
+    font-size: 25px ;
+    cursor: pointer;
+}
+
+.nav-bar .list-tb{
+    width: 200px ;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    list-style: none;
+}
+
+.list-tb li{
+    margin-bottom: 20px;
+}
+.list-tb a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+.list li{
+    padding: 30px 20px 20px;
+    margin: 0px 30px;
+}
+.list li:hover{
+    border-bottom: 3px solid blue;
+}
+.list li i{
+    font-size: 25px;
+    color: gray;
+}
+.notice{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.notice p{
+    margin: 20px;
+    color: gray;
+    font-size: 20px;
+}
+
+.notice .button{
+    width: 200px;
+    height: 40px;
+    background: yellow;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice .button a{
+    text-decoration: none;
+    font-size: 18px;
+}

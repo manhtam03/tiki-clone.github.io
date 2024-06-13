@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header&Footer</title>
+    <title>Thông báo của tôi</title>
     <link rel="shortcurt icon" type="image/png" href="https://salt.tikicdn.com/ts/upload/3b/5f/c7/0ea1997d4ef7f5c9055bc4d11416278a.png" sizes="32x32">
     <link rel="stylesheet" href="../style/header.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="../style/giohang.css">
+    <link rel="stylesheet" href="../style/thongtintk.css">
+    <link rel="stylesheet" href="../style/thongbao.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
@@ -91,7 +95,158 @@
         </div>
       </header>
       <main>
-
+        <div class="frame_body">
+            <div class="container">
+                <div class="wapper">
+                    <div class="w-header">
+                        <a href="#" class="w1"><span>Trang chủ</span></a>
+                        <span style="color: rgb(128, 128, 137);"><i class='bx bx-chevron-right'></i></span>
+                        <a href="#" class="w2"><span>  Thông tin tài khoản</span></a>
+                    </div>
+                </div>
+                <aside>
+                    <div class="aside-account">
+                        <img src="../assets/img/TK/avatar-2.png" alt="avatar">
+                        <div class="info">
+                            <span style="color: rgb(74, 74, 74);">Tài khoản của</span>
+                            <strong>Minh Nguyễn</strong>
+                        </div>
+                    </div>
+                    <ul class="ul-aside">
+                        <li>
+                            <a href="/pages/thongtintk.html">
+                                <i class='bx bxs-user'></i>
+                                <span>Thông tin tài khoản</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="thongbao.html">
+                                <i class='bx bxs-bell' style="color: rgb(241, 200, 74);"></i>
+                                <span>Thông báo của tôi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="qldh.html">
+                                <i class='bx bxs-shopping-bags'></i>
+                                <span>Quản lý đơn hàng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="qldh.html">
+                                <img src="../assets/img/footer/qldoitra.png" class="icon-img">
+                                <span>Quản lý đổi trả</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sodiachi.html">
+                                <i class='bx bxs-map'></i>
+                                <span>Sổ địa chỉ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="thongbao.html">
+                                <i class='bx bx-credit-card'></i>
+                                <span>Thông tin thanh toán</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="thongbao.html">
+                                <img src="../assets/img/footer/reviewhub.png" alt="ava" class="icon-img">
+                                <span>Đánh giá sản phẩm</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bx-history'></i>
+                                <span>Sản phẩm bạn đã xem</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxs-heart' style="color: rgb(250, 90, 90);"></i>
+                                <span>Sản phẩm yêu thích</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxs-star-half'></i>
+                                <span>Nhận xét của tôi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer/shareprofit-removebg-preview.png" alt="ava" class="icon-img">
+                                <span>Chia sẻ có lời</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer/paylater.png" alt="ava" class="icon-img">
+                                <span>Mua trước trả sau</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer/ticketsales.png" alt="ava" class="icon-img">
+                                <span>Mã giảm giá</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxs-coin-stack' style="color: rgb(253, 218, 63);"></i>
+                                <span>Quản lý xu của tôi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxs-book' style="color: rgb(220, 144, 239);"></i>
+                                <span>BookCare của tôi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="trungtamhotro.html">
+                                <i class='bx bx-headphone'></i>
+                                <span>Hỗ trợ khách hàng</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <div class="myNotification">
+                    <h2>Thông báo của tôi</h2>
+                    <div class="nav-bar">
+                        <ul class="list">
+                            <li><a href=""><i class="fa-solid fa-house"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-gift"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-rectangle-list"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-clock-rotate-left"></i></a></li>
+                        </ul>
+                        <i class="fa-solid fa-ellipsis-vertical" id="op-tb" ></i>
+                            <ul class="list-tb">
+                                <li><a href="">Đánh dấu đọc tất cả</a></li>
+                                <li><a href="">Xóa tất cả thông báo</a></li>
+                            </ul>  
+                    </div>
+                    <div class="notice">
+                        <img src="../assets/img/TK/mascot_fail.svg" alt="">
+                        <p>Bạn chưa có thông báo</p>
+                        <div class="button">
+                            <a href="../index.html"> Tiếp tục mua sắm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('.list-tb').hide();
+            });
+            $('#op-tb').click(function(){
+                    $('.list-tb').fadeIn();
+                });
+            $('.notice').click(function(){
+                $('.list-tb').hide();
+            });
+        </script>
       </main>
       <footer>
         <div class="frame_footer">
