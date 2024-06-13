@@ -3,8 +3,9 @@
     height: 600px;
     position: fixed;
     left: 850px;
-    bottom: 25px;
+    bottom: -580px;
     z-index: 200;
+    
 }
 
 .box-chat .box-icon{
@@ -18,7 +19,7 @@
     align-items: center;
     position: absolute;
     right: 0;
-    bottom: 0;
+    top:-150px;
 }
 .box-icon .assistant{
     display: flex;
@@ -51,6 +52,8 @@
 .box-chat .assistant-chat{
     width: 85%;
     height: 100%;
+    position: absolute;
+    top:-600px;
     border: 1px solid gray;
     border-radius: 5px;
     background: white;
@@ -58,12 +61,14 @@
 }
 .assistant-chat .direction{
     position: absolute;
-    right: 60px;
+    right:-31px;
     bottom: 90px;
 }
 .box-chat .new-message-chat{
     width: 60%;
     height: 100%;
+    position: absolute;
+    top:-600px;
     border: 1px solid gray;
     border-radius: 5px;
     background: white;
@@ -72,6 +77,7 @@
     bottom: 0;
     display: none;
 }
+
 .new-message-chat .direction{
     position: absolute;
     right: -31px;

@@ -1,7 +1,11 @@
-
+  // $(document).ready(function(){
+  //   $('.new-message-chat').hide();
+  //   $('.assistant-chat').hide();
+  // });
   $('.assistant').click(function(){
     $('.assistant-chat').fadeIn();
     $('.new-message-chat').hide();
+    
   });
   $('.new-message').click(function(){
     $('.new-message-chat').fadeIn();
