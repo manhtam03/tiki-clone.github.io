@@ -1,0 +1,218 @@
+.box-chat{
+    width: 600px;
+    height: 600px;
+    position: fixed;
+    left: 850px;
+    bottom: 25px;
+    z-index: 200;
+}
+
+.box-chat .box-icon{
+    width: 60px;
+    height: 150px;
+    background: blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.box-icon .assistant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.box-icon .new-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.box-icon img{
+    width: 35px;
+}
+.box-icon p{
+    color: white;
+}
+.box-chat .direction{
+    width: 0;
+    height: 0;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-left: 31px solid gray;
+}
+.box-chat .assistant-chat{
+    width: 85%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background: white;
+    display: none;
+}
+.assistant-chat .direction{
+    position: absolute;
+    right: 60px;
+    bottom: 90px;
+}
+.box-chat .new-message-chat{
+    width: 60%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background: white;
+    position: absolute;
+    right: 90px;
+    bottom: 0;
+    display: none;
+}
+.new-message-chat .direction{
+    position: absolute;
+    right: -31px;
+    bottom: 20px;
+}
+.new-message-chat .acc{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.acc .user{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+.new-message-chat .mess-search{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.mess-search form{
+    width: 95%;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.mess-search form input{
+    height: 38px;
+    width: 90%;
+    border: none;
+    outline: none;
+}
+.mess-search form i{
+    font-size: 20px;
+    margin: 0 10px;
+}
+.assistant-chat .option{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+.option .assistant-option{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.option .close{
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.assistant-chat .option2{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.option2 p{
+    color: gray;
+}
+.option2 img{
+    width: 50px;
+    height: 50px;
+}
+.option2 .as{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.as p{
+    color: blue;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.as .AI,.personal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.assistant-chat .chat-mess{
+    width: 90%;
+    margin-top: 50px;
+}
+.chat-mess img{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+.chat-mess h4{
+    color: blue;
+}
+.chat-mess .personal-chat,.AI-chat{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.assistant-chat .type{
+    width: 98%;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.type form{
+    width: 100%;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    margin-bottom: 15px;
+}
+
+.type form input{
+    width: 92%;
+    border: none;
+    outline: none;
+}
+.type form i{
+    font-size: 25px;
+}
+.type form:hover i{
+    color: blue;
+}
