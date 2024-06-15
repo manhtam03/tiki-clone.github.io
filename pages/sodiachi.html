@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../style/assistant.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
 </head>
 <body>
     <header class="header">
@@ -212,12 +213,63 @@
                     </ul>
                 </aside>
                 <div class="locate">
-                    <h2>Sổ địa chỉ</h2>
+                    <div class="add-locate">
+                      <h2>Sổ địa chỉ</h2>
                     <div class="add">
-                        <a href="">
+                        <a style="cursor: pointer;">
                             <i class="fa-solid fa-plus"></i>
                             <p>Thêm địa chỉ mới</p>
                         </a>
+                    </div>
+                    </div>
+                    <div class="create-locate">
+                      <h2>Tạo sổ địa chỉ</h2>
+                      <form action="">
+                        <div class="form-ctrl">
+                          <label for="name">Họ và tên:</label>
+                          <input type="text" placeholder="Nhập họ và tên" id="name">
+                        </div>
+                        <div class="form-ctrl">
+                          <label for="office">Công ty:</label>
+                          <input type="text" placeholder="Nhập công ty" id="office">
+                        </div>
+                        <div class="form-ctrl">
+                          <label for="sdt">Số điện thoại:</label>
+                          <input type="text" placeholder="Nhập số điện thoại" id="sdt">
+                        </div>
+                        <div class="form-ctrl">
+                          <label for="tp">Tỉnh/Thành phố:</label>
+                          <input type="text" placeholder="Nhập Tỉnh/Thành phố" id="tp">
+                        </div>
+                        <div class="form-ctrl">
+                          <label for="qh">Quận huyện:</label>
+                          <input type="text" placeholder="Nhập Quận huyện" id="qh">
+                        </div>
+                        <div class="form-ctrl">
+                          <label for="px">Phường xã:</label>
+                          <input type="text" placeholder="Nhập Phường xã" id="px">
+                        </div>
+                        <div class="form-ctrl">
+                          <label for="">Địa chỉ:</label>
+                          <textarea placeholder="Nhập địa chỉ"></textarea>
+                        </div>
+                        <div class="form-LDc">
+                          <p>Loại địa chỉ</p>
+                          <div class="op">
+                            <input type="radio" id="op1">
+                            <label for="op1">Nhà riêng / Chung cư</label>
+                            <input type="radio" id="op2">
+                            <label for="op2">Cơ quan / Công ty</label>
+                          </div>
+                        </div>
+                        <div class="form-Set">
+                          <input type="checkbox" id="set">
+                          <label for="set">Đặt làm địa chỉ mặc định</label>
+                        </div>
+                        <div class="update-button">
+                          <a href="">Cập nhật</a>
+                        </div>
+                      </form>
                     </div>
                 </div>
             </div>
@@ -312,6 +364,13 @@
       </main>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
       <script src="../js/assistant.js"></script>
+      <script>
+        $('.add').click(function(){
+          $('.add-locate').hide();
+          $('.create-locate').fadeIn();
+        });
+        
+      </script>
       <footer>
         <div class="frame_footer">
             <div class="colume">
@@ -327,7 +386,7 @@
                 <a href="">Báo lỗi bảo mật</a>
             </div>
             <div class="colume">
-                <h3>Vể Tiki</h3>
+                <h3>Về Tiki</h3>
                 <a href="">Giới thiệu Tiki</a>
                 <a href="">Tiki Blog</a>
                 <a href="">Tuyển dụng</a>

@@ -14,8 +14,12 @@
     align-items: center;
     justify-content: center;
 }
+.products{
+    margin-bottom: 60px;
+}
 .products h3{
     margin-bottom: 10px;
+    width: 80%;
 }
 .product{
     display: flex;
@@ -31,12 +35,7 @@
     overflow: hidden;
     box-sizing: border-box;
 }
-.product_item:hover .themVaoGioHang{
-    display: inline;
-}
-.product_item:hover .muaNgay{
-    display: inline;
-}
+
 .product_item > img{
     text-align: center;
     position: relative;

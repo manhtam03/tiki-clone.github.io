@@ -265,7 +265,7 @@ input::placeholder{
 }
 .input:focus {
     outline: none;
-    border-color: #7b4efa; 
+    border-color: blue; 
 }
 input[type="date"] {
     outline: none; 
@@ -292,7 +292,7 @@ input[type="date"] {
     border: none;
     height: 40px;
     border-radius: 4px;
-    background-color: #7b4efa;
+    background-color: blue;
     color: #fff;
     font-size: 15px;
     cursor: pointer;
@@ -353,7 +353,7 @@ input[type="date"] {
 }
 
 .list-item .btn-status{
-    border: 1px solid #7b4efa;
+    border: 1px solid blue;
     background-color: rgb(255, 255, 255);
 }
 .list-item .btn-status:hover{
@@ -371,7 +371,7 @@ input[type="date"] {
     font-size: 14.5px;
     cursor: pointer;
     padding: 0px 12px ;
-    color: #7b4efa;
+    color: blue;
 }
 button, input, optgroup, select, textarea {
     font-family: inherit;
