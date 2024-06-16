@@ -2,10 +2,9 @@
     width: 600px;
     height: 600px;
     position: fixed;
-    left: 850px;
-    bottom: -580px;
-    z-index: 200;
-    
+    right: 5%;
+    top: 95%;
+    z-index: 200;   
 }
 
 .box-chat .box-icon{
