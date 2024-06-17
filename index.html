@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style/home_page.css">
     <link rel="stylesheet" href="style/assistant.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
     <link rel="shortcurt icon" type="image/png" href="https://salt.tikicdn.com/ts/upload/3b/5f/c7/0ea1997d4ef7f5c9055bc4d11416278a.png" sizes="32x32">
     <script src="js/home_page.js"></script>
     <title>Tiki - Mua hàng online giá tốt, hàng chuẩn, ship nhanh</title>
@@ -476,7 +477,7 @@
                 <ul class="listLink">
 
                   <li class="link-item">
-                    <a href="pages/sanpham.html">
+                    <a href="pages/topdeal.html">
                       <div class="icon">
                         <img src="./assets/img/link-icon/topdeal.png" alt="">
                       </div>
@@ -549,7 +550,7 @@
                   <a href="/pages/sanpham.html">&nbspXem tất cả</a>
                 </div>
                 <div class="tab-product">
-                  <div class="content active">
+                  <div class="content active" >
                     <span>Điện Gia Dụng</span>
                   </div>
                   <div class="content">
@@ -1166,293 +1167,1117 @@
                   </div>
                   <a href="pages/sanpham.html">&nbspXem tất cả</a>
                 </div>
-                <div class="tab-product">
-                  <div class="content active">
-                    <span>Điện Gia Dụng</span>
+                <div class="tab-product tab-product-nk">
+                  <div class="active" >
+                    <a href="#diengiadung">Điện Gia Dụng</a>
                   </div>
-                  <div class="content">
-                    <span>Nhà Sách Tiki</span>
+                  <div >
+                    <a href="#nhasach">Nhà Sách Tiki</a>
                   </div>
-                  <div class="content">
-                    <span>Thời Trang Cho Mẹ Và Bé</span>
+                  <div >
+                    <a href="#thoitrang">Thời Trang Cho Mẹ Và Bé</a>
                   </div>
-                  <div class="content">
-                    <span>Đồng hồ và Trang Sức</span>
+                  <div>
+                    <a href="#dongho">Đồng hồ và Trang Sức</a>
                   </div>
                 </div>
 
-                <div class="list-products">     
-                  <div class="product">
-                    <a href="/pages/thongtinsp.html">
-                      <div class="thumbnail">
-                        <img src="assets/img/suggest/nk1.webp" alt="">
-                      </div>
-                      <div class="content-product">
-                        <div class="info">
-                          <div class="badges">
-                            <img style="width: 80px;height: 20px;display: block;"
-                                    src="assets/img/product-topdeal/topdeal.png">
-                            <img style="width: 89px;height: 20px;display: block;"
-                                    src="../assets/img/footer/chinhhang_png.png">
-                          </div>
-                          <div class="wrapper">
-                            <div class="name-wrapper">
-                              <h3>Sữa rửa mặt làm sạch & tẩy tế bào chết dịu nhẹ CeraVe SA Smoothing Cleanser 236ml</h3>
-                              <div class="rating">
-                                <div class="star">
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                <div class="box-list-products">
+                  <div class="list-products nhapkhau" id="diengiadung">     
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/suggest/nk1.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Sữa rửa mặt làm sạch & tẩy tế bào chết dịu nhẹ CeraVe SA Smoothing Cleanser 236ml</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-
-                            <div class="Price">
-                              <div class="price-discount" style="color: #ff0d0d;">950.000
-                                  <sup>đ</sup>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
                               </div>
-                              <div class="discount">
-                                  -55%
-                                  <sup style="text-decoration: line-through;">2.090.000đ</sup>          
-                              </div>             
-                            </div>        
-                            <div class="ship">
-                              <img src="../assets/img/footer/now.png">
-                              <p>Giao siêu tốc 2h</p>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </a>
+                      </a>
+                    </div>
+  
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/suggest/nk2.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Sữa Rửa Mặt Dạng Gel Dịu Nhẹ Dành Cho Da Nhạy Cảm Và Da Khô Laneige Water Bank Blue </h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/suggest/nk3.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Kem chống nắng dưỡng ẩm & cải thiện nếp nhăn innisfree Hyaluron Moist Sunscreen Essence</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/suggest/nk4.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Kem chống nắng dưỡng ẩm & cải thiện nếp nhăn innisfree Hyaluron Moist Sunscreen Essence</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/suggest/nk5.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Sữa Rửa Mặt Dạng Gel Dịu Nhẹ Dành Cho Da Nhạy Cảm Và Da Khô Laneige Water Bank Blue</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/suggest/nk6.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Sữa Rửa Mặt Dạng Gel Dịu Nhẹ Dành Cho Da Nhạy Cảm Và Da Khô Laneige Water Bank Blue</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>               
+                  </div>   
+  
+                  <div class="list-products nhapkhau" id="nhasach">     
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/product-topdeal/noiapsuat.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Nồi áp suất Elmich PCE-1805 dung tích 2.5L - Hàng Chính Hãng</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+  
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/footer/IP15PM.jpg" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>IPhone 15 Pro Max</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/TK/Oppo.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Điện Thoại Oppo A58 6GB/128GB</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/TK/POCO.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Điện Thoại POCO C65 (6GB/128GB)</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/TK/samsung.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Điện thoại AI Samsung Galaxy S24 Ultra</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/TK/Xiaomi.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Điện thoại Xiaomi Redmi Note 13 Pro</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>               
                   </div>
-
-                  <div class="product">
-                    <a href="/pages/thongtinsp.html">
-                      <div class="thumbnail">
-                        <img src="assets/img/suggest/nk2.webp" alt="">
-                      </div>
-                      <div class="content-product">
-                        <div class="info">
-                          <div class="badges">
-                            <img style="width: 80px;height: 20px;display: block;"
-                                    src="assets/img/product-topdeal/topdeal.png">
-                            <img style="width: 89px;height: 20px;display: block;"
-                                    src="../assets/img/footer/chinhhang_png.png">
-                          </div>
-                          <div class="wrapper">
-                            <div class="name-wrapper">
-                              <h3>Sữa Rửa Mặt Dạng Gel Dịu Nhẹ Dành Cho Da Nhạy Cảm Và Da Khô Laneige Water Bank Blue </h3>
-                              <div class="rating">
-                                <div class="star">
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+  
+                  <div class="list-products nhapkhau" id="thoitrang">     
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/suggest/nk1.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Sữa rửa mặt làm sạch & tẩy tế bào chết dịu nhẹ CeraVe SA Smoothing Cleanser 236ml</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-
-                            <div class="Price">
-                              <div class="price-discount" style="color: #ff0d0d;">950.000
-                                  <sup>đ</sup>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
                               </div>
-                              <div class="discount">
-                                  -55%
-                                  <sup style="text-decoration: line-through;">2.090.000đ</sup>          
-                              </div>             
-                            </div>        
-                            <div class="ship">
-                              <img src="../assets/img/footer/now.png">
-                              <p>Giao siêu tốc 2h</p>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </a>
+                      </a>
+                    </div>
+  
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/suggest/nk2.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Sữa Rửa Mặt Dạng Gel Dịu Nhẹ Dành Cho Da Nhạy Cảm Và Da Khô Laneige Water Bank Blue </h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/suggest/nk3.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Kem chống nắng dưỡng ẩm & cải thiện nếp nhăn innisfree Hyaluron Moist Sunscreen Essence</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/suggest/nk4.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Kem chống nắng dưỡng ẩm & cải thiện nếp nhăn innisfree Hyaluron Moist Sunscreen Essence</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/suggest/nk5.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Sữa Rửa Mặt Dạng Gel Dịu Nhẹ Dành Cho Da Nhạy Cảm Và Da Khô Laneige Water Bank Blue</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/suggest/nk6.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Sữa Rửa Mặt Dạng Gel Dịu Nhẹ Dành Cho Da Nhạy Cảm Và Da Khô Laneige Water Bank Blue</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>               
                   </div>
-                  <div class="product">
-                    <a href="/pages/thongtinsp.html">
-                      <div class="thumbnail">
-                        <img src="assets/img/suggest/nk3.webp" alt="">
-                      </div>
-                      <div class="content-product">
-                        <div class="info">
-                          <div class="badges">
-                            <img style="width: 80px;height: 20px;display: block;"
-                                    src="assets/img/product-topdeal/topdeal.png">
-                            <img style="width: 89px;height: 20px;display: block;"
-                                    src="../assets/img/footer/chinhhang_png.png">
-                          </div>
-                          <div class="wrapper">
-                            <div class="name-wrapper">
-                              <h3>Kem chống nắng dưỡng ẩm & cải thiện nếp nhăn innisfree Hyaluron Moist Sunscreen Essence</h3>
-                              <div class="rating">
-                                <div class="star">
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+  
+                  <div class="list-products nhapkhau" id="dongho">     
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/product-topdeal/noiapsuat.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Nồi áp suất Elmich PCE-1805 dung tích 2.5L - Hàng Chính Hãng</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-
-                            <div class="Price">
-                              <div class="price-discount" style="color: #ff0d0d;">950.000
-                                  <sup>đ</sup>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
                               </div>
-                              <div class="discount">
-                                  -55%
-                                  <sup style="text-decoration: line-through;">2.090.000đ</sup>          
-                              </div>             
-                            </div>        
-                            <div class="ship">
-                              <img src="../assets/img/footer/now.png">
-                              <p>Giao siêu tốc 2h</p>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </a>
+                      </a>
+                    </div>
+  
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/footer/IP15PM.jpg" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>IPhone 15 Pro Max</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/TK/Oppo.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Điện Thoại Oppo A58 6GB/128GB</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/TK/POCO.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Điện Thoại POCO C65 (6GB/128GB)</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/TK/samsung.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Điện thoại AI Samsung Galaxy S24 Ultra</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img src="assets/img/TK/Xiaomi.webp" alt="">
+                        </div>
+                        <div class="content-product">
+                          <div class="info">
+                            <div class="badges">
+                              <img style="width: 80px;height: 20px;display: block;"
+                                      src="assets/img/product-topdeal/topdeal.png">
+                              <img style="width: 89px;height: 20px;display: block;"
+                                      src="../assets/img/footer/chinhhang_png.png">
+                            </div>
+                            <div class="wrapper">
+                              <div class="name-wrapper">
+                                <h3>Điện thoại Xiaomi Redmi Note 13 Pro</h3>
+                                <div class="rating">
+                                  <div class="star">
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                      <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="Price">
+                                <div class="price-discount" style="color: #ff0d0d;">950.000
+                                    <sup>đ</sup>
+                                </div>
+                                <div class="discount">
+                                    -55%
+                                    <sup style="text-decoration: line-through;">2.090.000đ</sup>          
+                                </div>             
+                              </div>        
+                              <div class="ship">
+                                <img src="../assets/img/footer/now.png">
+                                <p>Giao siêu tốc 2h</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>               
                   </div>
-                  <div class="product">
-                    <a href="/pages/thongtinsp.html">
-                      <div class="thumbnail">
-                        <img src="assets/img/suggest/nk4.webp" alt="">
-                      </div>
-                      <div class="content-product">
-                        <div class="info">
-                          <div class="badges">
-                            <img style="width: 80px;height: 20px;display: block;"
-                                    src="assets/img/product-topdeal/topdeal.png">
-                            <img style="width: 89px;height: 20px;display: block;"
-                                    src="../assets/img/footer/chinhhang_png.png">
-                          </div>
-                          <div class="wrapper">
-                            <div class="name-wrapper">
-                              <h3>Kem chống nắng dưỡng ẩm & cải thiện nếp nhăn innisfree Hyaluron Moist Sunscreen Essence</h3>
-                              <div class="rating">
-                                <div class="star">
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="Price">
-                              <div class="price-discount" style="color: #ff0d0d;">950.000
-                                  <sup>đ</sup>
-                              </div>
-                              <div class="discount">
-                                  -55%
-                                  <sup style="text-decoration: line-through;">2.090.000đ</sup>          
-                              </div>             
-                            </div>        
-                            <div class="ship">
-                              <img src="../assets/img/footer/now.png">
-                              <p>Giao siêu tốc 2h</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="product">
-                    <a href="/pages/thongtinsp.html">
-                      <div class="thumbnail">
-                        <img src="assets/img/suggest/nk5.webp" alt="">
-                      </div>
-                      <div class="content-product">
-                        <div class="info">
-                          <div class="badges">
-                            <img style="width: 80px;height: 20px;display: block;"
-                                    src="assets/img/product-topdeal/topdeal.png">
-                            <img style="width: 89px;height: 20px;display: block;"
-                                    src="../assets/img/footer/chinhhang_png.png">
-                          </div>
-                          <div class="wrapper">
-                            <div class="name-wrapper">
-                              <h3>Sữa Rửa Mặt Dạng Gel Dịu Nhẹ Dành Cho Da Nhạy Cảm Và Da Khô Laneige Water Bank Blue</h3>
-                              <div class="rating">
-                                <div class="star">
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="Price">
-                              <div class="price-discount" style="color: #ff0d0d;">950.000
-                                  <sup>đ</sup>
-                              </div>
-                              <div class="discount">
-                                  -55%
-                                  <sup style="text-decoration: line-through;">2.090.000đ</sup>          
-                              </div>             
-                            </div>        
-                            <div class="ship">
-                              <img src="../assets/img/footer/now.png">
-                              <p>Giao siêu tốc 2h</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="product">
-                    <a href="/pages/thongtinsp.html">
-                      <div class="thumbnail">
-                        <img src="assets/img/suggest/nk6.webp" alt="">
-                      </div>
-                      <div class="content-product">
-                        <div class="info">
-                          <div class="badges">
-                            <img style="width: 80px;height: 20px;display: block;"
-                                    src="assets/img/product-topdeal/topdeal.png">
-                            <img style="width: 89px;height: 20px;display: block;"
-                                    src="../assets/img/footer/chinhhang_png.png">
-                          </div>
-                          <div class="wrapper">
-                            <div class="name-wrapper">
-                              <h3>Sữa Rửa Mặt Dạng Gel Dịu Nhẹ Dành Cho Da Nhạy Cảm Và Da Khô Laneige Water Bank Blue</h3>
-                              <div class="rating">
-                                <div class="star">
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                    <i class="fa-solid fa-star fa-2xs" style="color: #f3eb12;"></i>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="Price">
-                              <div class="price-discount" style="color: #ff0d0d;">950.000
-                                  <sup>đ</sup>
-                              </div>
-                              <div class="discount">
-                                  -55%
-                                  <sup style="text-decoration: line-through;">2.090.000đ</sup>          
-                              </div>             
-                            </div>        
-                            <div class="ship">
-                              <img src="../assets/img/footer/now.png">
-                              <p>Giao siêu tốc 2h</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>               
                 </div>
               </div> 
               <!-- End nhap khau chinh hang -->
@@ -1826,7 +2651,7 @@
                   <div class="header-suggest">
                     <h2>Gợi ý hôm nay</h2>
                     <div class="menu-tab">
-                      <div class="tab">
+                      <div class="tab first">
                         <img src="assets/img/icon-menutab/danhchoban.webp" alt="">
                         <div class="tab-text">Dành cho bạn</div>
                       </div>

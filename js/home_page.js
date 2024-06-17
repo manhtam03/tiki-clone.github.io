@@ -7,6 +7,29 @@ function showLoading() {
     homeContentMore.style.display = 'grid';
 }
 
+
+//menu tab
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("nhap-khau");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("content");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "flex";
+    evt.currentTarget.className += " active";
+  }
+
 //button prev and next slide
 document.addEventListener('DOMContentLoaded', function() {
     let list = document.getElementById('list');
@@ -96,6 +119,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+$(document).ready(function(){
+    $('.box-list-products .nhapkhau').hide();
+    $('.nhapkhau:first-child').fadeIn();
+    $('.tab-product-nk div').click(function(){
+        $('.tab-product-nk div').removeClass('active');
+        $(this).addClass('active');
+        $('.nhapkhau').hide();
+        id = $(this).children('a').attr('href')
+        $(id).fadeIn();
+        return false;
+    });
+  });
 
 
 

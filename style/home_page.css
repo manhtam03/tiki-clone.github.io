@@ -235,7 +235,7 @@ a{
 .tab-product{
     display: flex;
 }
-.tab-product>.content{
+.tab-product>div{
     padding: 5px 16px;
     border: 1px solid rgba(100, 98, 98, 0.205);
     border-radius: 15px;
@@ -244,13 +244,16 @@ a{
     margin-right: 10px;
 }
 
-.tab-product>.content:hover{
+.tab-product>div:hover{
     cursor: pointer;
-    background-color: rgba(100, 98, 98, 0.205);
+    border-color: blue;
 }
 
 .products>.tab-product>.active{
     border: 1px solid blue;
+    background-color: rgb(206, 201, 201);
+}
+.products>.tab-product>.active a{
     color: blue;
 }
 .products>.tab-product>.active:hover{
@@ -260,8 +263,8 @@ a{
 .products>.list{
     display: flex;
     transition: 1s;
-
 }
+
 
 .list-products{
     display: flex;
@@ -315,25 +318,7 @@ a{
     padding-left: 8px;
 }
 
-.products>.buttons{
-    position: absolute;
-    top: 45%;
-    left: 2%;
-    width: 97%;
-    display: flex;
-    justify-content: space-between;
-}
 
-.products>.buttons>button{
-    cursor: pointer;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: white;
-    color: blue;
-    border: none;
-    font-weight: bold;
-}
 
 .content_banner{
     margin-top: 15px;
@@ -428,6 +413,10 @@ a{
 .suggest>.header-suggest>.menu-tab{
     display: flex;
    
+}
+.suggest>.header-suggest>.menu-tab>.first{
+    background-color: rgba(66, 117, 194, 0.137);
+    border-bottom: 1px solid blue;
 }
 
 .suggest>.header-suggest>.menu-tab>.tab{

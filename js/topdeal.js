@@ -52,3 +52,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+$(document).ready(function(){
+    $('.voucher').hide();
+    $('.voucher:first-child').fadeIn();
+    $('.item-slider1 div').click(function(){
+        $('.item-slider1 div').removeClass('active1');
+        $(this).addClass('active1');
+        $('.voucher').hide();
+        id = $(this).children('a').attr('href')
+        $(id).fadeIn();
+        return false;
+    });
+  });

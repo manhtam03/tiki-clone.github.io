@@ -1,6 +1,6 @@
 main{
     width: 100%;
-    height: 3000px;
+    height: 3600px;
     background-color: rgb(0, 25, 125);
 }
 
@@ -152,7 +152,7 @@ main{
 .slider1{
     width: 100%;
     position: relative;
-    height: 120px;
+    height: 140px;
     overflow:  hidden;
 }
 
@@ -167,10 +167,11 @@ main{
 }
 
 .item-slider1{
-    width: 900px;
+    width: 800px;
     display: flex;
     justify-content: space-between;
-    margin-right: 30px;
+    margin-right: 20px;
+    height: 140px;
 }
 .item-slider1>div>a{
     display: flex;
@@ -178,19 +179,26 @@ main{
     align-items: center;
     justify-content: center;
 }
-
+.item-slider1>div{
+    width: 110px;
+}
 .item-slider1 .active1{
     border-bottom: 5px solid white;
     border-radius: 5px;
 }
+
 .item-slider1>div>a>img{
-    width: 100%;
+    width: 80%;
     height: 80%;
     object-fit: cover;
     border-radius: 25px;
     padding: 0px 8px;
 }
-
+.item-slider1>div>a>p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
 
 .slider1>.buttons1{
     position: absolute;
@@ -214,4 +222,151 @@ main{
 }
 .banner-slide1>.dots1>li{
     list-style: none;
+}
+.vouchers{
+    width: 100%;
+}
+.voucher{
+    width: 95%;
+    height: 880px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.voucher .voucher-box{
+    width: 49%;
+    height: 130px;
+    position: relative;
+}
+
+.voucher-box .voucher-detail{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.pd-voucher{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 10px  ;
+}
+
+.pd-voucher img{
+    width: 60px;
+    height: 60px;
+}
+.pd-voucher p{
+    font-size: 12px;
+    color: gray;
+}
+
+.pd-voucher-detail{
+    width: 100%;
+    background: white;
+    border-radius:  10px 10px;
+}
+.pd-voucher-detail>div{
+    width: 95%;
+    margin: 10px auto;
+}
+.pd-voucher-detail>div .voucher-head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.voucher-head i{
+    color:blue;
+    cursor: pointer;
+}
+.voucher-foot{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.voucher-foot .save-button{
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(1, 127, 255);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.voucher-i{
+    width: 400px;
+    height: 260px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top:-260px;
+    right: 0;
+    display: none;
+}
+.voucher-head>div:hover .voucher-i{
+   display: block;
+}
+.voucher-i .box-vc-i{
+    width: 90%;
+    margin: 20px 30px;
+}
+.box-vc-i .code{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.code p:first-child{
+    margin-right: 80px;
+    color: gray;
+}
+.code i{
+    color: blue;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.box-vc-i .date{
+    width: 50%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date p:first-child{
+    color: gray;
+}
+
+.box-vc-i .need{
+    width: 90%;
+
+}
+.need ul{
+    margin: 10px 0 0 15px;
+}
+.need ul li{
+    padding: 5px;
+}
+
+.box-conection{
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: -10px;
+}
+
+.top-deal-forsure{
+    width: 100%;
+}
+.top-deal-forsure .td-box{
+    width: 95%;
+    margin: auto;
 }
