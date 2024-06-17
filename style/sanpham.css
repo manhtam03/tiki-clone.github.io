@@ -36,7 +36,7 @@ text-size-adjust: 100%;
     line-height: 20px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    -webkit-scrollbar-width: none;
+    scrollbar-width: none;
 }
 .listItem {
     position: relative;
