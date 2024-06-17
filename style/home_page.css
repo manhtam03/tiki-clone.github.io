@@ -58,7 +58,7 @@ a{
     text-decoration: none;
 }
 
-.list-item .title{
+.list-item>.title{
     margin-bottom: 8px;
     padding-left: 16px;
     font-weight: 700;
@@ -78,6 +78,10 @@ a{
     height: 32px;
     width: 32px;
     margin-right: 8px;
+}
+
+.item>div{
+    font-size: 16px;
 }
 
 .item:hover {
@@ -222,6 +226,7 @@ a{
 .header-products{
     display: flex;
     font-size: 16px;
+    justify-content: space-between;
 }
 
 .header-products>.title>h3{
@@ -230,6 +235,10 @@ a{
 
 .header-products>.title>img{
     width: 200px;
+}
+
+.header-products>a{
+    color: blue;
 }
 
 .tab-product{
@@ -246,25 +255,24 @@ a{
 
 .tab-product>div:hover{
     cursor: pointer;
-    border-color: blue;
+    background-color: rgba(100, 98, 98, 0.205);
 }
 
 .products>.tab-product>.active{
     border: 1px solid blue;
-    background-color: rgb(206, 201, 201);
+    color: blue;
 }
 .products>.tab-product>.active a{
     color: blue;
 }
 .products>.tab-product>.active:hover{
-    background-color: rgba(0, 0, 255, 0.164);
+    background-color: rgba(56, 112, 202, 0.185);
 }
 
 .products>.list{
     display: flex;
     transition: 1s;
 }
-
 
 .list-products{
     display: flex;
@@ -318,7 +326,26 @@ a{
     padding-left: 8px;
 }
 
+.products>.buttons{
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+}
 
+.products>.buttons>button{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    color: blue;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
 
 .content_banner{
     margin-top: 15px;
@@ -478,6 +505,10 @@ a{
     font-size: 16px;
     line-height: 150%;
 
+}
+
+.button>.view_more:hover{
+    background-color: rgba(57, 117, 212, 0.151);
 }
 
 .info h3{
