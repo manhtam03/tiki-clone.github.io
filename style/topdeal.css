@@ -369,4 +369,38 @@ main{
 .top-deal-forsure .td-box{
     width: 95%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product{
+    border-radius: 10px;
+    width: 280px;
+    height: 448px;
+    margin-bottom: 10px;
+    background: white;
+}
+
+.product>a>.thumbnail>img{
+    width: 280px;
+    border-radius: 10px;
+}
+.rating{
+    width: 62%;
+    display: flex;
+}
+.content-product{
+    padding: 0 10px;
+}
+
+.content-product>.info>.wrapper>.name-wrapper >h3{
+    font-size: 16px;
+    line-height: 150%;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.699);
 }
