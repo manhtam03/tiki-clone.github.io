@@ -215,6 +215,8 @@ a{
     margin-top: 16px;
     background-color: white;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
 .header-products{
@@ -235,7 +237,7 @@ a{
 }
 .tab-product>.content{
     padding: 5px 16px;
-    border: 1px solid grey;
+    border: 1px solid rgba(100, 98, 98, 0.205);
     border-radius: 15px;
     height: 30px;
     align-items: center;
@@ -244,12 +246,26 @@ a{
 
 .tab-product>.content:hover{
     cursor: pointer;
-    background-color: grey;
+    background-color: rgba(100, 98, 98, 0.205);
+}
+
+.products>.tab-product>.active{
+    border: 1px solid blue;
+    color: blue;
+}
+.products>.tab-product>.active:hover{
+    background-color: rgba(0, 0, 255, 0.164);
+}
+
+.products>.list{
+    display: flex;
+    transition: 1s;
+
 }
 
 .list-products{
     display: flex;
-    padding: 5px;
+    padding: 10px;
 }
 
 .product{
@@ -297,6 +313,26 @@ a{
     color: gray;
     font-size: 12px;
     padding-left: 8px;
+}
+
+.products>.buttons{
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products>.buttons>button{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    color: blue;
+    border: none;
+    font-weight: bold;
 }
 
 .content_banner{
@@ -414,7 +450,7 @@ a{
 }
 
 .suggest>.header-suggest>.menu-tab>.tab:hover{
-    background-color: rgba(128, 128, 128, 0.096);
+    background-color: rgba(100, 98, 98, 0.205);
     cursor: pointer;
 }
 

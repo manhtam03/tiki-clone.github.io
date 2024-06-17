@@ -60,4 +60,42 @@ document.addEventListener('DOMContentLoaded', function() {
         clearInterval(refreshSlider);
         refreshSlider = setInterval(() => { next.click() }, 5000);
     }
+
+    // product slide
+    let list1 = document.getElementById('list1');
+    let product = document.querySelectorAll('.list .list-product');
+    let prev1 = document.getElementById('prev1');
+    let next1 = document.getElementById('next1');
+
+    let active1 = 0;
+    let length_product = product.length - 1;
+
+    next1.onclick = function() {
+        if (active1 + 1 > length_product) {
+            active1 = 0;
+        } else {
+            active1 += 1;
+        }
+        reloadSlider1();
+    }
+
+    prev1.onclick = function() {
+        if (active1 - 1 < 0) {
+            active1 = length_product;
+        } else {
+            active1 -= 1;
+        }
+        reloadSlider1();
+    }
+    function reloadSlider1() {
+        if (active1 >= 0 && active1 < product.length) {
+            let checkLeft = product[active1].offsetLeft;
+            list1.style.left = -checkLeft + 'px';
+        } else {
+            console.error('Không tìm thấy phần tử tại vị trí active trong mảng product.');
+        }
+    }
 });
+
+
+
