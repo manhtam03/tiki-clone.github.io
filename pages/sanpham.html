@@ -1,112 +1,128 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sản phẩm</title>
-    <link rel="shortcurt icon" type="image/png" href="https://salt.tikicdn.com/ts/upload/3b/5f/c7/0ea1997d4ef7f5c9055bc4d11416278a.png" sizes="32x32">
-    <link rel="stylesheet" href="../style/header.css">
-    <link rel="stylesheet" href="../style/footer.css">
-    <link rel="stylesheet" href="../style/giohang.css">
-    <link rel="stylesheet" href="../style/assistant.css">
-    <link rel="stylesheet" href="../style/sanpham.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="../js/aside_sp.js"></script>
-    <script src="../js/home_page.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản phẩm</title>
+  <link rel="shortcut icon" type="image/png" href="https://salt.tikicdn.com/ts/upload/3b/5f/c7/0ea1997d4ef7f5c9055bc4d11416278a.png" sizes="32x32">
+  <link rel="stylesheet" href="../style/header.css">
+  <link rel="stylesheet" href="../style/footer.css">
+  <link rel="stylesheet" href="../style/giohang.css">
+  <link rel="stylesheet" href="../style/assistant.css">
+  <link rel="stylesheet" href="../style/sanpham.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="../js/aside_sp.js"></script>
+  <script src="../js/home_page.js"></script>
 </head>
+
 <body>
-    <header class="header">
-        <div class="frame_header"> 
-          <a href="/index.html">
-            <div class="logo">
-              <img src="/assets/img/logo-tiki.png">
-              <p>Tốt&Nhanh</p>
-            </div>
-          </a>
-          <div class="header_content">
-            <div class=top>
-              <div class="search">
-                <i class="fa-solid fa-magnifying-glass icon_search"></i>
-                <input type="text" value="" placeholder="Bạn tìm gì hôm nay" class="frame_search" id="searchInput">
-                <button class="button_search" >Tìm kiếm</button>
+  <header class="header">
+    <div class="frame_header">
+      <a href="/index.html">
+        <div class="logo">
+          <img src="/assets/img/logo-tiki.png">
+            <p>Tốt&Nhanh</p>
+        </div>
+      </a>
+
+      <div class="header_content">
+        <div class=top>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass icon_search"></i>
+            <input type="text" value="" placeholder="Bạn tìm gì hôm nay" class="frame_search" id="searchInput">
+            <button class="button_search" >Tìm kiếm</button>
+          </div>
+
+          <div class="shortcut">
+            <a href="/index.html">
+              <div class="sc_1">
+                <i class="fa-solid fa-house icon"></i>
+                <p>Trang chủ</p>
               </div>
-              <div class="shortcut">
-                <a href="/index.html">
-                  <div class="sc_1">
-                    <i class="fa-solid fa-house icon"></i>
-                    <p>Trang chủ</p>
-                  </div>
+            </a>
+
+            <div class="sc_1">
+              <i class="fa-solid fa-face-smile-wink"></i>
+              <p>&nbspTài Khoản</p>
+
+              <div class="account">
+                <a href="thongtintk.html">
+                  <p class="account_1">Thông tin tài khoản</p>
                 </a>
-                <div class="sc_1">
-                  <i class="fa-solid fa-face-smile-wink"></i>
-                  <p>&nbspTài Khoản</p>
-                  <div class="account">
-                    <a href="thongtintk.html">
-                      <p class="account_1">Thông tin tài khoản</p>
-                    </a>
-                    <a href="qldh.html">
-                      <p class="account_1">Đơn hàng của tôi</p>
-                    </a>
-                    <a href="trungtamhotro.html">
-                      <p class="account_1">Trung tâm hỗ trợ</p>
-                    </a>
-                    <a href="#">
-                      <p class="account_1">Đăng xuất</p>
-                    </a>
-                  </div>
-                </div>
-                <div style="border-right: 1px solid #DDDDE3;height: 20px;margin: 0px 15px 0px 15px;"></div>
-                <a href="giohang.html">
-                  <div class="sc_2">
-                    <i class="fa-solid fa-cart-shopping icon"></i>
-                    <span id="counter">0</span>
-                  </div>
+
+                <a href="qldh.html">
+                  <p class="account_1">Đơn hàng của tôi</p>
+                </a>
+
+                <a href="trungtamhotro.html">
+                  <p class="account_1">Trung tâm hỗ trợ</p>
+                </a>
+
+                <a href="#">
+                  <p class="account_1">Đăng xuất</p>
                 </a>
               </div>
             </div>
-            <div style="width: 1000px;height: 60px;" class="under-search">
-              <div class="product-category">
-                <ul>
-                  <li><a href="#">điện gia dụng</a></li>
-                  <li><a href="#">xe cộ</a></li>
-                  <li><a href="#">mẹ & bé</a></li>
-                  <li><a href="#">khỏe đẹp</a></li>
-                  <li><a href="#">nhà cửa</a></li>
-                  <li><a href="#">sách</a></li>
-                  <li><a href="#">thể thao</a></li>
-                </ul>
+
+            <div style="border-right: 1px solid #DDDDE3;height: 20px;margin: 0px 15px 0px 15px;"></div>
+
+            <a href="giohang.html">
+              <div class="sc_2">
+                <i class="fa-solid fa-cart-shopping icon"></i>
+                <span id="counter">0</span>
               </div>
-              <div class="address">
-                <i class="fa-solid fa-location-dot"></i>
-                <h4>Giao đến:</h4>
-                <div>Yên Nghĩa, Hà Đông, Hà Nội</div>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
-        <div class="return-policy">
-          <a href="https://hotro.tiki.vn/s/article/chinh-sach-doi-tra-san-pham">
-            <div class="detail">
-              <i class="fa-solid fa-box-open"></i>
-              <div class="day-return">&nbsp30 ngày</div>
-              <p>&nbspđổi ý & miễn phí trả hàng</p>
-            </div>
-          </a>
+
+        <div style="width: 1000px;height: 60px;" class="under-search">
+          <div class="product-category">
+            <ul>
+              <li><a href="">điện gia dụng</a></li>
+              <li><a href="">xe cộ</a></li>
+              <li><a href="">mẹ & bé</a></li>
+              <li><a href="">khỏe đẹp</a></li>
+              <li><a href="">nhà cửa</a></li>
+              <li><a href="">sách</a></li>
+              <li><a href="">thể thao</a></li>
+            </ul>
+          </div>
+
+          <div class="address">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>Giao đến:</h4>
+            <div>Yên Nghĩa, Hà Đông, Hà Nội</div>
+          </div>
         </div>
-      </header>
-      <main>
+      </div>
+    </div>
+
+    <div class="return-policy">
+      <a href="https://hotro.tiki.vn/s/article/chinh-sach-doi-tra-san-pham">
+        <div class="detail">
+          <i class="fa-solid fa-box-open"></i>
+          <div class="day-return">&nbsp30 ngày</div>
+          <p>&nbspđổi ý & miễn phí trả hàng</p>
+        </div>
+      </a>
+    </div>
+  </header>
+
+    <main>
         <div class="frame-body">
-            <div class="path">
-                <div class="path-detail">
-                    <a href="../index.html">
-                      <p>Trang chủ&nbsp</p>
-                    </a>
-                    <span style="color: rgb(128, 128, 137);"><i class='bx bx-chevron-right'></i></span>
-                    <p>&nbspSản phẩm</p>
-                </div>
+          <div class="path">
+            <div class="path-detail">
+              <a href="../index.html">
+              <p>Trang chủ&nbsp</p>
+              </a>
+              <span style="color: rgb(128, 128, 137);"><i class='bx bx-chevron-right'></i></span>
+              <p>&nbspSản phẩm</p>
             </div>
+          </div>
             <div class="container">
                 <aside>
                     <div class="danh-muc">
@@ -146,7 +162,6 @@
                                 <div class="arrow" id="ar2">
                                     <i class="fa-solid fa-chevron-down" style="cursor: pointer;"></i>
                                     <i class="fa-solid fa-chevron-up" style="cursor: pointer;" ></i>
-                                   
                                 </div>
                             </div>
                             <div class="list-sp-expan " id="expan2">
@@ -254,7 +269,7 @@
                         </div>
                     </div>
                 </aside>
-                <main> 
+        <main>
                     <div class="frame-main-sp">
                         <h1>Nhà Sách Tiki</h1>
 
@@ -263,40 +278,40 @@
                             <div class="list" id="list">
                               <div class="item-slider" id="item-slider">
                                 <div>
-                                  <a href="#">
-                                    <img src="../assets/img/sp2/slide-img1.png" alt="">
+                                  <a href="">
+                                    <img src="../assets/img/sp/slide-img1.png" alt="">
                                   </a>
                                 </div>
                                 <div>
-                                  <a href="#">
-                                    <img src="../assets/img/sp2/slide-img2.png" alt="">
+                                  <a href="">
+                                    <img src="../assets/img/sp/slide-img2.png" alt="">
                                   </a>
                                 </div>       
                               </div>
                               <div class="item-slider" id="item-slider">
                                 <div>
-                                  <a href="#">
-                                    <img src="../assets/img/sp2/slide-img3.png" alt="">
+                                  <a href="">
+                                    <img src="../assets/img/sp/slide-img3.png" alt="">
                                   </a>
                                 </div>
                                 <div>
-                                  <a href="#">
-                                    <img src="../assets/img/sp2/slide-img4.png" alt="">
+                                  <a href="">
+                                    <img src="../assets/img/sp/slide-img4.png" alt="">
                                   </a>
-                                </div>       
+                                </div>
                               </div>
                               <div class="item-slider" id="item-slider">
                                 <div>
-                                  <a href="#">
-                                    <img src="../assets/img/sp2/slide-img5.png" alt="">
+                                  <a href="">
+                                    <img src="../assets/img/sp/slide-img5.png" alt="">
                                   </a>
                                 </div>
                                 <div>
-                                  <a href="#">
-                                    <img src="../assets/img/sp2/slide-img6.png" alt="">
+                                  <a href="">
+                                    <img src="../assets/img/sp/slide-img6.png" alt="">
                                   </a>
-                                </div>       
-                              </div>  
+                                </div>
+                              </div>
                             </div>
                             <!-- button prev and next -->
                             <div class="buttons">
@@ -317,25 +332,25 @@
                           <div class="items-danh-muc">
                             <div class="item-dm">
                               <a href="">
-                                <img src="../assets/img/sp2/Ebooks.png" alt="">
+                                <img src="../assets/img/sp/Ebooks.png" alt="">
                                 <p>English Books</p>
                               </a>
                             </div>
                             <div class="item-dm">
                               <a href="">
-                                <img src="../assets/img/sp2/Vbooks.png" alt="">
+                                <img src="../assets/img/sp/Vbooks.png" alt="">
                                 <p>Sách Tiếng Việt</p>
                               </a>
                             </div>
                             <div class="item-dm">
                               <a href="">
-                                <img src="../assets/img/sp2/vpp.png" alt="">
+                                <img src="../assets/img/sp/vpp.png" alt="">
                                 <p>Văn phòng phẩm</p>
                               </a>
                             </div>
                             <div class="item-dm">
                               <a href="">
-                                <img src="../assets/img/sp2/gift.png" alt="">
+                                <img src="../assets/img/sp/gift.png" alt="">
                                 <p>Quà lưu niệm</p>
                               </a>
                             </div>
@@ -377,7 +392,7 @@
                                 </div>
                                 <div class="left-way" style="width: 26%;">
                                   <input type="checkbox" id="thi">
-                                  <label for="thi"><img src="../assets/img/sp2/top-deal.png" style="height: 20px;width: 80px;"></label>
+                                  <label for="thi"><img src="../assets/img/sp/top-deal.png" style="height: 20px;width: 80px;"></label>
                                   <label for="thi">Siêu rẻ</label>
                                 </div>
                                 <div class="left-way">
@@ -406,8 +421,8 @@
                           </div>
                           <div class="all-sp-main">
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book1.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book1.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -436,8 +451,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -465,8 +480,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book2.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book2.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -494,10 +509,10 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book3.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book3.webp" >
                                 <div class="real">
-                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp2/top-deal.png"></div>
+                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp/top-deal.png"></div>
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
                                 </div>
@@ -524,10 +539,10 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book4.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book4.webp" >
                                 <div class="real">
-                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp2/top-deal.png"></div>
+                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp/top-deal.png"></div>
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
                                 </div>
@@ -554,10 +569,10 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book5.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book5.webp" >
                                 <div class="real">
-                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp2/top-deal.png"></div>
+                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp/top-deal.png"></div>
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
                                 </div>
@@ -584,10 +599,10 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book6.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book6.webp" >
                                 <div class="real">
-                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp2/top-deal.png"></div>
+                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp/top-deal.png"></div>
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
                                 </div>
@@ -614,10 +629,10 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book7.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book7.webp" >
                                 <div class="real">
-                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp2/top-deal.png"></div>
+                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp/top-deal.png"></div>
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
                                 </div>
@@ -644,8 +659,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book8.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book8.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -673,8 +688,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book9.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book9.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -702,8 +717,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book10.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book10.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -731,8 +746,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book11.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book11.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -760,8 +775,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book12.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book12.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -789,10 +804,10 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book13.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book13.webp" >
                                 <div class="real">
-                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp2/top-deal.png"></div>
+                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp/top-deal.png"></div>
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
                                 </div>
@@ -819,10 +834,10 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book14.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book14.webp" >
                                 <div class="real">
-                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp2/top-deal.png"></div>
+                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp/top-deal.png"></div>
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
                                 </div>
@@ -849,10 +864,10 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book15.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book15.webp" >
                                 <div class="real">
-                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp2/top-deal.png"></div>
+                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp/top-deal.png"></div>
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
                                 </div>
@@ -879,10 +894,10 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book16.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book16.webp" >
                                 <div class="real">
-                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp2/top-deal.png"></div>
+                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp/top-deal.png"></div>
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
                                 </div>
@@ -909,10 +924,10 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book17.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book17.webp" >
                                 <div class="real">
-                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp2/top-deal.png"></div>
+                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp/top-deal.png"></div>
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
                                 </div>
@@ -939,8 +954,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book18.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book18.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -968,8 +983,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book19.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book19.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -997,8 +1012,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book20.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book20.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -1026,8 +1041,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book21.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book21.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -1055,8 +1070,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book22.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book22.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -1084,10 +1099,10 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book23.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book23.webp" >
                                 <div class="real">
-                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp2/top-deal.png"></div>
+                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp/top-deal.png"></div>
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
                                 </div>
@@ -1119,10 +1134,10 @@
                           </div>
                           <div class="sp-main-more">
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book6.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book6.webp" >
                                 <div class="real">
-                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp2/top-deal.png"></div>
+                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp/top-deal.png"></div>
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
                                 </div>
@@ -1149,10 +1164,10 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book7.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book7.webp" >
                                 <div class="real">
-                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp2/top-deal.png"></div>
+                                  <div style="width: 100%;margin-left: 10px ;"><img src="../assets/img/sp/top-deal.png"></div>
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
                                 </div>
@@ -1179,8 +1194,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book8.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book8.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -1208,8 +1223,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book9.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book9.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -1237,8 +1252,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book10.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book10.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -1266,8 +1281,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book11.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book11.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -1295,8 +1310,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book12.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book12.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -1324,8 +1339,8 @@
                               </a>
                             </div>
                             <div class="sp-main">
-                              <a href="#">
-                                <img src="../assets/img/sp2/book1.webp" >
+                              <a href="thongtinsp.html">
+                                <img src="../assets/img/sp/book1.webp" >
                                 <div class="real">
                                   <img src="../assets/img/footer/chinhhang_png.png" alt="">
                                   <p style="color:gray; font-weight: 500; font-size: 15px;">Tài trợ</p>
@@ -1356,7 +1371,7 @@
                           </div>
                         </div>
                     </div>
-                </main>
+        </main>
             </div>
             <div class="description">
               <p style="font-size:25px;">Thông tin danh mục</p>
@@ -1381,7 +1396,7 @@
               <p>Thay vì phải loay hoay đi khắp nơi để tìm được cuốn sách mình muốn mua, các bạn chỉ cần lên điểm bán sách trực tuyến Tiki gõ tên sách mình cần tìm là nó sẽ xuất hiện ngay. 
                 Thêm vào đó, việc thanh toán sau khi mua hàng cũng sẽ vô cùng nhanh chóng và không cần phải chen chúc xếp hàng để chờ đến lượt mình.</p>
               <div class="img-b">
-                <img src="../assets/img/sp2/cool-book.png" alt="">
+                <img src="../assets/img/sp/cool-book.png" alt="">
                 <p style="font-style: italic;">Nhà sách Tiki - mua sắm dễ dàng, giao hàng nhanh chóng (Nguồn: Tiki)</p>
                 <p>Xem thêm: <a href="">sách giáo khoa lớp 10 mới, thần đồng đất việt, hoàng tử bé</a></p>
               </div>
@@ -1484,7 +1499,7 @@
             </div>
           </div>
         </div>
-      </main>
+    </main>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
       <script src="../js/assistant.js"></script>
       <script src="../js/sanpham.js"></script>
@@ -1620,4 +1635,5 @@
         </div>
     </footer>
 </body>
+
 </html>
