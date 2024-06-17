@@ -260,7 +260,10 @@ a{
 .products>.list{
     display: flex;
     transition: 1s;
+}
 
+.product>.nhap-khau:first-child{
+    display: flex;
 }
 
 .list-products{
@@ -428,6 +431,10 @@ a{
 .suggest>.header-suggest>.menu-tab{
     display: flex;
    
+}
+.suggest>.header-suggest>.menu-tab>.first{
+    background-color: rgba(66, 117, 194, 0.137);
+    border-bottom: 1px solid blue;
 }
 
 .suggest>.header-suggest>.menu-tab>.tab{
