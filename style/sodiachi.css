@@ -61,6 +61,12 @@
 .form-ctrl input::placeholder{
     padding-left: 10px;
 }
+input[type="text"]{
+    outline: none;
+}
+input[type="text"]:focus{
+    border: 1px solid blue;
+}
 .form-ctrl textarea{
     width: 80%;
     height: 100px;
