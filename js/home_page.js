@@ -120,5 +120,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+$(document).ready(function(){
+    $('.box-list-products .nhapkhau').hide();
+    $('.nhapkhau:first-child').fadeIn();
+    $('.tab-product-nk div').click(function(){
+        $('.tab-product-nk div').removeClass('active');
+        $(this).addClass('active');
+        $('.nhapkhau').hide();
+        id = $(this).children('a').attr('href')
+        $(id).fadeIn();
+        return false;
+    });
+  });
+
 
 
