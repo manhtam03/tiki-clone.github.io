@@ -64,3 +64,12 @@ $(document).ready(function(){
         return false;
     });
   });
+
+//button view more
+function showLoading() {
+    var viewMoreButton = document.getElementById('viewMoreButton');
+    viewMoreButton.style.display = 'none';
+
+    var homeContentMore  = document.getElementById('td-box-more');
+    homeContentMore.style.display = 'flex';
+}  
