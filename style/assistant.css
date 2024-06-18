@@ -8,13 +8,15 @@
 }
 
 .box-chat .box-icon{
-    width: 60px;
-    height: 150px;
-    background: blue;
-    border-radius: 10px;
+    width: 62px;
+    height: 170px;
+    background: linear-gradient(0deg, rgb(10, 104, 255),rgb(10, 104, 255)), 
+                linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    bottom: 24px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: absolute;
     right: 0;
@@ -25,14 +27,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
     cursor: pointer;
+    padding: 5px;
+}
+
+.box-icon .line{
+    border-top: 1px solid rgba(209, 197, 197, 0.527);
+    width: 100%;
 }
 .box-icon .new-message{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5px;
     cursor: pointer;
 }
 .box-icon img{
@@ -46,21 +54,22 @@
     height: 0;
     border-top: 22px solid transparent;
     border-bottom: 22px solid transparent;
-    border-left: 31px solid gray;
+    border-left: 31px solid white;
 }
 .box-chat .assistant-chat{
-    width: 85%;
+    width: 88%;
     height: 100%;
     position: absolute;
     top:-600px;
-    border: 1px solid gray;
     border-radius: 5px;
     background: white;
     display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .assistant-chat .direction{
     position: absolute;
-    right:-31px;
+    right:-25px;
     bottom: 90px;
 }
 .box-chat .new-message-chat{
@@ -68,18 +77,19 @@
     height: 100%;
     position: absolute;
     top:-600px;
-    border: 1px solid gray;
     border-radius: 5px;
     background: white;
     position: absolute;
-    right: 90px;
+    right: 75px;
     bottom: 0;
     display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .new-message-chat .direction{
     position: absolute;
-    right: -31px;
+    right: -25px;
     bottom: 20px;
 }
 .new-message-chat .acc{
@@ -94,11 +104,24 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.acc .close-chat-mess{
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.acc .close-chat-mess:hover{
+    background-color: rgba(175, 170, 170, 0.158);
+}
 .new-message-chat .mess-search{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
+    padding: 15px;
+    border-top: 1px solid rgba(151, 145, 145, 0.253);
+    border-bottom: 1px solid rgba(151, 145, 145, 0.253);
 }
 .mess-search form{
     width: 95%;
@@ -121,6 +144,7 @@
 .assistant-chat .option{
     display: flex;
     justify-content: space-between;
+    padding: 9px 16px;
 }
 a{
     text-decoration: none;
@@ -145,7 +169,7 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .option2 p{
     color: gray;
@@ -175,7 +199,7 @@ a{
 
 .assistant-chat .chat-mess{
     width: 90%;
-    margin-top: 50px;
+    margin-top: 55px;
 }
 .chat-mess img{
     width: 50px;
@@ -185,6 +209,12 @@ a{
 .chat-mess h4{
     color: blue;
 }
+
+.chat-mess .chat{
+    background-color: rgba(192, 183, 183, 0.144);
+    border-radius: 15px;
+    padding: 12px;
+}
 .chat-mess .personal-chat,.AI-chat{
     display: flex;
     margin-bottom: 30px;
@@ -192,7 +222,7 @@ a{
 
 .assistant-chat .type{
     width: 98%;
-    margin-top: 180px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
