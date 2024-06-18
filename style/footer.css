@@ -5,31 +5,33 @@ footer{
     font-weight: normal;
     color: rgb(128, 128, 137);
     background-color: white;
-    width: 1350px;
-    margin: auto;
+    /* width: 1350px;
+    margin: auto; */
 }
 .frame_footer{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 2% 2% 2% 5%;
+    padding: 16px;
     width: 100%;
 }
 .colume h3{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 600;
     color: rgb(56, 56, 61);
     margin-bottom: 12px;
 }
 .colume p{
-    margin-bottom: 8px
+    font-size: 13px;
+    margin-bottom: 8px;
 }
 .colume a{
     display: block;
     margin-bottom: 8px;
     color: rgb(128, 128, 137);
     text-decoration: none;
+    font-size: 13px;
 }
 .colume img{
     width: 30px;
@@ -76,7 +78,7 @@ footer{
     height: 80px;
 }
 .colume:nth-child(4){
-    width: 300px;
+    width: 160px;
 }
 .colume a:hover{
     text-decoration: underline;
