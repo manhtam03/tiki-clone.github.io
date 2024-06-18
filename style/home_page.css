@@ -269,14 +269,16 @@ a{
     background-color: rgba(56, 112, 202, 0.185);
 }
 
-.products>.list{
+.products>.list1{
     display: flex;
     transition: 1s;
+    position: relative;
 }
 
 .list-products{
     display: flex;
     padding: 10px;
+    transition: 1s;
 }
 
 .product{

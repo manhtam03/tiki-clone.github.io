@@ -8,8 +8,6 @@ function showLoading() {
 }
 
 
-//menu tab
-
 //button prev and next slide
 document.addEventListener('DOMContentLoaded', function() {
     let list = document.getElementById('list');
@@ -64,9 +62,9 @@ document.addEventListener('DOMContentLoaded', function() {
         refreshSlider = setInterval(() => { next.click() }, 5000);
     }
 
-    // product slide
+    // top deal slide
     let list1 = document.getElementById('list1');
-    let product = document.querySelectorAll('.list .list-product');
+    let product = document.querySelectorAll('.top-deal');
     let prev1 = document.getElementById('prev1');
     let next1 = document.getElementById('next1');
 
@@ -100,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+//menu tab nhap khau chinh hang
 $(document).ready(function(){
     $('.box-list-products .nhapkhau').hide();
     $('.nhapkhau:first-child').fadeIn();
@@ -111,7 +110,18 @@ $(document).ready(function(){
         $(id).fadeIn();
         return false;
     });
-  });
+});
 
-
-
+//menu tab co the ban thich
+$(document).ready(function(){
+    $('.box-list-products-1 .like').hide();
+    $('.like:first-child').fadeIn();
+    $('.tab-pr .content').click(function(){
+        $('.tab-pr .content').removeClass('active');
+        $(this).addClass('active');
+        $('.like').hide();
+        id = $(this).children('a').attr('href')
+        $(id).fadeIn();
+        return false;
+    });
+});
