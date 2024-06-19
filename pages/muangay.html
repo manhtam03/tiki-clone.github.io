@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mua ngay sản phẩm</title>
+  <link rel="shortcut icon" type="image/png" href="https://salt.tikicdn.com/ts/upload/3b/5f/c7/0ea1997d4ef7f5c9055bc4d11416278a.png" sizes="32x32">
+  <link rel="stylesheet" href="../style/header.css">
+  <link rel="stylesheet" href="../style/footer.css">
+  <link rel="stylesheet" href="../style/giohang.css">
+  <link rel="stylesheet" href="../style/assistant.css">
+  <link rel="stylesheet" href="../style/muangay.css">
+  <link rel="stylesheet" href="../style/thongtinsp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="frame_header">
+      <a href="/index.html">
+        <div>
+          <img src="/assets/img/logo-tiki.png">
+            <p>Tốt&Nhanh</p>
+        </div>
+      </a>
+
+      <div class="header_content">
+        <div class=top>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass icon_search"></i>
+            <input type="text" value="" placeholder="Bạn tìm gì hôm nay" class="frame_search" id="searchInput">
+            <button class="button_search" >Tìm kiếm</button>
+          </div>
+
+          <div class="shortcut">
+            <a href="/index.html">
+              <div class="sc_1">
+                <i class="fa-solid fa-house icon"></i>
+                <p>Trang chủ</p>
+              </div>
+            </a>
+
+            <div class="sc_1">
+              <i class="fa-solid fa-face-smile-wink"></i>
+              <p>&nbspTài Khoản</p>
+
+              <div class="account">
+                <a href="thongtintk.html">
+                  <p class="account_1">Thông tin tài khoản</p>
+                </a>
+
+                <a href="qldh.html">
+                  <p class="account_1">Đơn hàng của tôi</p>
+                </a>
+
+                <a href="trungtamhotro.html">
+                  <p class="account_1">Trung tâm hỗ trợ</p>
+                </a>
+
+                <a href="#">
+                  <p class="account_1">Đăng xuất</p>
+                </a>
+              </div>
+            </div>
+
+            <div style="border-right: 1px solid #DDDDE3;height: 20px;margin: 0px 15px 0px 15px;"></div>
+
+            <a href="giohang.html">
+              <div class="sc_2">
+                <i class="fa-solid fa-cart-shopping icon"></i>
+                <span id="counter">0</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div style="width: 1000px;height: 60px;" class="under-search">
+          <div class="product-category">
+            <ul>
+              <li><a href="sanpham.html">điện gia dụng</a></li>
+              <li><a href="sanpham.html">xe cộ</a></li>
+              <li><a href="sanpham.html">mẹ & bé</a></li>
+              <li><a href="sanpham.html">khỏe đẹp</a></li>
+              <li><a href="sanpham.html">nhà cửa</a></li>
+              <li><a href="sanpham.html">sách</a></li>
+              <li><a href="sanpham.html">thể thao</a></li>
+            </ul>
+          </div>
+
+          <div class="address">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>Giao đến:</h4>
+            <div>Yên Nghĩa, Hà Đông, Hà Nội</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="return-policy">
+      <a href="https://hotro.tiki.vn/s/article/chinh-sach-doi-tra-san-pham">
+        <div class="detail">
+          <i class="fa-solid fa-box-open"></i>
+          <div class="day-return">&nbsp30 ngày</div>
+          <p>&nbspđổi ý & miễn phí trả hàng</p>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main style="background: rgb(245, 245, 250);">
+    <div class="container">
+      <div class="left">
+        <div class="ship-plan left-block">
+          <h3 class="left-title" style="margin-bottom: 16px;">Chọn hình thức giao hàng</h3>
+
+          <div class="style-method-list">
+            <div class="ship-method-list">
+              <div>
+                <label class="radio-button">
+                  <input type="radio" readonly name="ship-method" value="3" checked>
+                  <span class="radio-fake"></span>
+                  <span class="label">
+                    <div class="style-label">
+                      <div class="style-deli-method" style="padding: 2px 0px;">
+                        <img class="method-logo" width="32" height="16" src="../assets/img/muangay/now.png">
+                        <span class="method-text">Giao siêu tốc 2h</span>
+                      </div>
+                    </div>
+                  </span>
+                </label>
+              </div>
+
+              <div>
+                <label class="radio-button">
+                  <input type="radio" readonly name="ship-method" value="1">
+                  <span class="radio-fake"></span>
+                  <span class="label">
+                    <div class="style-label">
+                      <div class="style-deli-method" style="padding: 2px 0px;">
+                        <span class="method-text">Giao siêu tốc 2h</span>
+                      </div>
+                    </div>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <img class="methods-arrow" src="../assets/img/muangay/method arrow.png" width="32">
+          </div>
+
+          <div class="ship">
+            <div class="ship-pack">
+              <div class="pack-lead-time">
+                <div class="package-title">
+                  <img width="24" height="24" src="../assets/img/muangay/pack.png">
+                  Gói: Giao siêu tốc 2h, trước 10h ngày mai
+                </div>
+              </div>
+              <div class="left-content">
+                <div class="package-summary">
+                  <div class="style-deli-method">
+                    <img class="method-logo" width="32" height="16" src="../assets/img/muangay/now.png">
+                    <span class="method-text" style="font-size: 12px; line-height: 16px;">Giao siêu tốc 2h</span>
+                  </div>
+                  <div class="ship-fee-style">
+                    <span class="current-fee">25.000 ₫</span>
+                  </div>
+                </div>
+                <div class="package-item-list">
+                  <div>
+                    <div class="pack-item-list-style">
+                      <div class="item-icon">
+                        <img src="../assets/img/muangay/cam.png" width="48" height="48" class="icon-img">
+                      </div>
+                      <div class="item-info">
+                        <div class="item-info1">
+                          <span class="item-info-name" title="Cây Cam Ngọt Của Tôi">Cây Cam Ngọt Của Tôi</span>
+                        </div>
+                        <div class="item-info2">
+                          <div class="item-info-qty">SL: x1</div>
+                          <div class="item-info-price">64.800 ₫</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-content">
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="coupons">
+            
+          </div>
+        </div>
+
+        <div class="pay-plan left-block">
+          
+        </div>
+      </div>
+
+      <div class="right">
+        
+      </div>
+    </div>
+  </main>
+
+  <main>
+    <div class="box-chat">
+      <div class="box-icon">
+        <div class="assistant">
+          <img src="../assets/img/footer/tro-li.png" >
+          <p>Trợ lý</p>
+        </div>
+
+        <div class="new-message">
+          <img src="../assets/img/footer/message.png" alt="">
+          <p>Tin mới</p>
+        </div>
+      </div>
+
+      <div class="assistant-chat" id="AI-chat">
+        <div class="direction"></div>
+
+        <div class="option">
+          <div class="assistant-option">
+            <img src="../assets/img/footer/AI-tro-li.png" style="width: 50px;">
+            <a href="">Trợ lý AI</a>
+          </div>
+
+          <div class="close">
+            <div class="clear-chat">
+              <img src="../assets/img/footer/clean.png" style="cursor: pointer;">
+            </div>
+
+            <div class="close-chat">
+              <i class="fa-solid fa-x" style="cursor: pointer; font-size: 23px;"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="option2">
+          <p>Chọn trợ lý bạn muốn trò chuyện</p>
+
+          <div class="as">
+            <div class="AI">
+              <img src="../assets/img/footer/AI-tro-li.png" >
+              <p>Hỏi Trợ lý AI</p>
+            </div>
+
+            <div class="personal">
+              <img src="../assets/img/TK/Minh.png" >
+              <p>Hỏi Trợ lý cá nhân</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-mess">
+          <div class="personal-chat">
+            <img src="../assets/img/TK/Minh.png" alt="">
+
+            <div class="chat">
+              <h4>Trợ lý Minh Nguyễn</h4>
+              <p>Chào Quý khách, cảm ơn Quý khách đã đồng hành cùng Tiki trong năm qua. 
+              Em là trợ lý Minh Nguyễn, có thể giúp gì được cho Quý khách ạ?</p>
+            </div>
+          </div>
+
+          <div class="AI-chat">
+            <img src="../assets/img/footer/AI-tro-li.png" alt="">
+
+            <div class="chat">
+              <h4>Trợ lý AI</h4>
+              <p>Chào mừng bạn đã quay trở lại với trợ lý AI. Mình có thể giúp gì cho bạn?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="type">
+          <form action="">
+            <input type="text" placeholder="Nhập nội dung chat">
+            <i class="fa-regular fa-circle-dot" style="cursor: pointer;"></i>
+          </form>
+
+          <p>Tích hợp trí tuệ nhân tạo, thông tin mang tính tham khảo</p>
+        </div>
+      </div>
+
+      <div class="new-message-chat" id="mess-chat">
+        <div class="direction"></div>
+
+        <div class="acc">
+          <div class="user">
+            <img src="../assets/img/TK/Minh.png" style="width: 45px;">
+            <h2>Minh Nguyễn</h2>
+          </div>
+
+          <div class="close-chat-mess">
+            <i class="fa-solid fa-x" style="cursor: pointer; font-size: 15px;"></i>
+          </div>
+        </div>
+
+        <div class="mess-search">
+          <form action="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Tìm theo người dùng...">
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+  <script src="../js/assistant.js"></script>
+  <script src="../js/header.js"></script>
+
+  <footer>
+    <div class="frame_footer">
+      <div class="colume">
+        <h3>Hỗ trợ khách hàng</h3>
+        <p>Hotline: <b>1900-0091</b> </p>
+        <a href="">Gửi yêu cầu hỗ trợ</a>
+        <a href="">Hướng dẫn đặt hàng</a>
+        <a href="">Phương thức vận chuyển</a>
+        <a href="">Chính sách đổi trả</a>
+        <a href="">Hướng dẫn trả góp</a>
+        <a href="">Chính sách hàng nhập khẩu</a>
+        <a href="">Hỗ trợ khách hàng</a>
+        <a href="">Báo lỗi bảo mật</a>
+      </div>
+
+      <div class="colume">
+        <h3>Về Tiki</h3>
+        <a href="">Giới thiệu Tiki</a>
+        <a href="">Tiki Blog</a>
+        <a href="">Tuyển dụng</a>
+        <a href="">Chính sách bảo mật thanh toán</a>
+        <a href="">Chính sách bảo mật thông tin cá nhân</a>
+        <a href="">Chính sách giải quyết khiếu nại</a>
+        <a href="">Điều khoản sử dụng</a>
+        <a href="">Giới thiệu Tiki Xu</a>
+        <a href="">Tiếp thị liên kết cùng Tiki</a>
+        <a href="">Bán hàng doanh nghiệp</a>
+        <a href="">Điều kiện vận chuyển</a>
+      </div>
+
+      <div class="colume">
+        <div class="row1">
+          <h3>Hợp tác và liên kết</h3>
+
+          <a href="">Quy chế hoạt động Sàn GDTMĐT</a>
+
+          <a href="">Bán hàng cùng Tiki</a>
+        </div>
+
+        <div class="row2">
+          <h3>Chứng nhận bởi</h3>
+
+          <div class="logo-real">
+            <a href="">
+              <img src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/bo-cong-thuong-2.png" alt="">
+            </a>
+
+            <a href="">
+              <img src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/bo-cong-thuong.svg" style="width: 80px;">
+            </a>
+
+            <a href="">
+              <img src="https://images.dmca.com/Badges/dmca_protected_sml_120y.png?ID=388d758c-6722-4245-a2b0-1d2415e70127" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="colume">
+        <div class="row-1">
+          <h3>Phương thức thanh toán</h3>
+
+          <p class="payment">
+            <span class="icon">
+              <img src="../assets/img/footer/payment1.png" style="width: 32;height: 32;">
+            </span>
+
+            <span class="icon">
+              <img src="../assets/img/footer/payment2.png" style="width: 32;height: 32;">
+            </span>
+
+            <span class="icon">
+              <img src="../assets/img/footer/payment3.png" style="width: 32;height: 32;">
+            </span>
+
+            <span class="icon">
+              <img src="../assets/img/footer/payment4.png" style="width: 32;height: 32;">
+            </span>
+
+            <span class="icon">
+              <img src="../assets/img/footer/payment5.png" style="width: 32;height: 32;">
+            </span>
+
+            <span class="icon">
+              <img src="../assets/img/footer/payment6.png" style="width: 32;height: 32;">
+            </span>
+
+            <span class="icon">
+              <img src="../assets/img/footer/payment7.png" style="width: 32;height: 32;">
+            </span>
+
+            <span class="icon">
+              <img src="../assets/img/footer/payment8.png" style="width: 32;height: 32;">
+            </span>
+
+            <span class="icon">
+              <img src="../assets/img/footer/payment9.png" style="width: 32;height: 32;">
+            </span>
+
+            <span class="icon">
+              <img src="../assets/img/footer/payment10.png" style="width: 32;height: 32;">
+            </span>
+          </p>
+
+          <div class="row-2">
+            <h3>Dịch vụ giao hàng</h3>
+              <a href="https://www.tikinow.vn/?src=footer" target="_blank">
+                <img src="https://salt.tikicdn.com/ts/upload/74/56/ab/e71563afb23e3f34a148fe1b7d3413c5.png" style="width: 150px;">
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="colume" style="width: 300px;">
+        <h3>Theo dõi chúng tôi trên</h3>
+
+        <p class="social_media">
+          <a href="">
+            <i class="fa-brands fa-facebook" style="color: #45619d;"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-youtube" style="color: #ff0d0d;"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-tiktok" style="color: #172c4f;"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-instagram" style="color: #fc194c;"></i>
+          </a>
+        </p>
+
+        <h3>Tải ứng dụng trên điện thoại</h3>
+
+        <div class="download">
+          <img src="../assets/img/footer/qr.png" style="width: 80px;height: 80px;">
+
+          <div class="icon_download">
+            <a href="https://play.google.com/store/games?hl=vi&gl=US">
+              <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/appstore.png" style="height: 36px;width: 122px;">
+            </a>
+
+            <a href="https://play.google.com/store/games?hl=vi&gl=US">
+              <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/playstore.png" style="height: 36px;width: 122px;">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="office">
+        <h3>Công ty TNHH TIKI</h3>
+
+        <p>Tòa nhà số 52 đường Út Tịch, Phường 4, Quận Tân Bình, Thành phố Hồ Chí Minh<br>
+        Giấy chứng nhận đăng ký doanh nghiệp số 0309532909 do Sở Kế Hoạch và Đầu Tư Thành phố Hồ Chí Minh 
+        cấp lần đầu vào ngày 06/01/2010.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
