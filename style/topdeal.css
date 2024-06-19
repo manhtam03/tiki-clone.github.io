@@ -12,6 +12,7 @@ main{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .frame-main .img-nav img{
     width: 95%;
@@ -364,8 +365,9 @@ main{
 .top-deal-forsure{
     width: 100%;
 }
-.top-deal-forsure .td-box,
-.top-deal-forsure .td-box-more{
+.top-deal-forsure>.td-box,
+.top-deal-forsure>.td-box-more,
+.top-deal-forsure>.td-box-more1{
     width: 95%;
     margin: auto;
     display: flex;
@@ -373,8 +375,44 @@ main{
     justify-content: space-between;
 }
 
-.top-deal-forsure .td-box-more{
+.top-deal-forsure>.td-box-more,
+.top-deal-forsure>.td-box-more1{
     display: none;
+}
+
+.family{
+    margin-top: 40px;
+    position: relative;
+}
+
+.tab-list{
+    display: flex;
+    list-style: none;
+    color: gray;
+    justify-content: center;
+}
+
+.tab-list>.tab-item{
+    display: flex;
+    height: 134px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 12px 22px;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.tab-list>.active{
+    color: white;
+}
+
+.tab-list>.tab-item>.tab-name{
+    font-size: 28px;
+}
+
+.tab-list>.tab-item:hover{
+    color: white;
 }
 .product{
     border-radius: 10px;

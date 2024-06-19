@@ -27,8 +27,103 @@
                 <div class=top>
                   <div class="search">
                     <i class="fa-solid fa-magnifying-glass icon_search"></i>
-                    <input type="text" value="" placeholder="Bạn tìm gì hôm nay" class="frame_search" id="searchInput">
-                    <button class="button_search" >Tìm kiếm</button>
+                    <input onclick="showBoxSearch()" type="text" value="" placeholder="Bạn tìm gì hôm nay" class="frame_search" id="searchInput">
+                    <button class="button_search">Tìm kiếm</button>
+                    
+                    <div class="overlay" id="overlay"></div>
+                    <!-- box search -->
+                    <div class="box-search" id="box-search" onclick="openBoxSearch()">                   
+                      <div class="item-box-search">
+                        <a href="#">Siêu Deal điện máy</a>
+                        <div class="keyword">Siêu Deal điện máy</div>
+                        <img src="assets/img/box-search.webp" alt="">
+                      </div>
+                      <div class="suggestion">
+                        <a href="#">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          <div class="keyword">Thẻ cào viettel</div>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          <div class="keyword">Tai nghe bluetooth</div>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          <div class="keyword">iphone</div>
+                        </a>
+                      </div>                   
+                      <div class="bottom">
+                        <div class="popular">
+                          <div class="heading">Tìm kiếm phổ biến</div>
+                          <div class="inner">
+                            <div class="row">
+                              <a href="pages/sanpham.html">
+                                <img src="assets/img/product-topdeal/noiapsuat.webp">
+                                <div class="title">Nồi áp suất</div>
+                              </a>
+                              <a href="pages/sanpham.html">
+                                <img src="assets/img/sidebar/w_fashion.png">
+                                <div class="title">Váy nữ</div>
+                              </a>
+                              <a href="pages/sanpham.html">
+                                <img src="assets/img/sidebar/m_shoes.webp">
+                                <div class="title">Giày nam</div>
+                              </a>
+                            </div>
+                            <div class="row">
+                              <a href="pages/sanpham.html">
+                                <img src="assets/img/sidebar/w_bag.webp">
+                                <div class="title">Túi xách tay nữ</div>
+                              </a>
+                              <a href="pages/sanpham.html">
+                                <img src="assets/img/sidebar/watch.webp">
+                                <div class="title">Đồng hồ nam</div>
+                              </a>
+                              <a href="pages/sanpham.html">
+                                <img src="assets/img/sidebar/thietbiso.webp">
+                                <div class="title">Tai nghe chụp</div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="category">
+                          <div class="heading">Danh mục nổi bật</div>
+                          <div class="inner">
+                            <div class="row1">
+                              <a href="#">                        
+                                <img src="assets/img/sidebar/toy.webp">
+                                <div class="title1">Đồ Chơi - Mẹ & Bé</div>
+                              </a>
+                              <a href="#">
+                                <img src="assets/img/sidebar/phone.png">
+                                <div class="title1">Điện Thoại - Máy Tính Bảng</div>
+                              </a>
+                              <a href="#">
+                                <img src="assets/img/sidebar/diengiadung.webp">
+                                <div class="title1">Điện Gia Dụng</div>
+                              </a>
+                            </div>
+                            <div class="row1">
+                              <a href="#">
+                                <img src="assets/img/sidebar/lamdep.webp">
+                                <div class="title1">Làm Đẹp - Sức Khỏe</div>
+                              </a>
+                              <a href="#">
+                                <img src="assets/img/sidebar/m_fashion.webp">
+                                <div class="title1">Thời trang nam</div>
+                              </a>
+                              <a href="#">
+                                <img src="assets/img/sidebar/w_fashion.png">
+                                <div class="title1">Thời trang nữ</div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- end box search -->
                   </div>
                   <div class="shortcut">
                     <a href="/index.html">
@@ -345,7 +440,7 @@
                 </li>
 
                 <li>
-                  <a href="#">
+                  <a href="pages/topdeal.html">
                     <div class="item">
                       <img src="assets/img/sidebar/now.webp" alt="">
                       <div>Tốt & Nhanh</div>
@@ -354,7 +449,7 @@
                 </li>
 
                 <li>
-                  <a href="#">
+                  <a href="pages/topdeal.html">
                     <div class="item">
                       <img src="assets/img/sidebar/cheap.webp" alt="">
                       <div>Giá Rẻ Mỗi Ngày</div>
@@ -372,7 +467,7 @@
                 </li>
 
                 <li>
-                  <a href="#">
+                  <a href="pages/topdeal.html">
                     <div class="item">
                       <img src="assets/img/sidebar/discount.webp" alt="">
                       <div>Mã giảm giá</div>
@@ -381,7 +476,7 @@
                 </li>
 
                 <li>
-                  <a href="#">
+                  <a href="pages/topdeal.html">
                     <div class="item">
                       <img src="assets/img/sidebar/wallet.webp" alt="">
                       <div>Ưu đãi thẻ, ví</div>
@@ -425,7 +520,7 @@
                   <div class="list" id="list">
                     <div class="item-slider" id="item-slider">
                       <div>
-                        <a href="#">
+                        <a href="pages/topdeal.html">
                           <img src="assets/img/slider/slide1.webp" alt="">
                         </a>
                       </div>
@@ -449,7 +544,7 @@
                     </div>
                     <div class="item-slider" id="item-slider">
                       <div>
-                        <a href="#">
+                        <a href="pages/topdeal.html">
                           <img src="assets/img/slider/slide5.webp" alt="">
                         </a>
                       </div>
@@ -2291,27 +2386,27 @@
               <!-- banner sale -->
               <div class="content_banner">
                 <div class="img_content">
-                  <a href="pages/uu_dai.html" class="san_pham_hot">
+                  <a href="#" class="san_pham_hot">
                     <img src="assets/img/img-banner-sale/banner1.webp">
                   </a>
                 </div>
                 <div class="img_content">
-                  <a href="pages/uu_dai.html" class="san_pham_hot">
+                  <a href="#" class="san_pham_hot">
                     <img src="assets/img/img-banner-sale/banner2.webp">
                   </a>
                 </div>
                 <div class="img_content">
-                  <a href="pages/uu_dai.html" class="san_pham_hot">
+                  <a href="pages/topdeal.html#family" class="san_pham_hot">
                     <img src="assets/img/img-banner-sale/banner3.webp">
                   </a>
                 </div>
                 <div class="img_content">
-                  <a href="pages/uu_dai.html" class="san_pham_hot">
+                  <a href="#" class="san_pham_hot">
                     <img src="assets/img/img-banner-sale/banner4.webp">
                   </a>
                 </div>
                 <div class="img_content">
-                  <a href="pages/uu_dai.html" class="san_pham_hot">
+                  <a href="#" class="san_pham_hot">
                     <img src="assets/img/img-banner-sale/banner5.webp">
                   </a>
                 </div>
@@ -2321,27 +2416,27 @@
                   </a>
                 </div>
                 <div class="img_content">
-                  <a href="pages/uu_dai.html" class="san_pham_hot">
+                  <a href="pages/topdeal.html#family" class="san_pham_hot">
                     <img src="assets/img/img-banner-sale/banner7.webp">
                   </a>
                 </div>
                 <div class="img_content">
-                  <a href="pages/uu_dai.html" class="san_pham_hot">
+                  <a href="#" class="san_pham_hot">
                     <img src="assets/img/img-banner-sale/banner8.webp">
                   </a>
                 </div>
                 <div class="img_content">
-                  <a href="pages/uu_dai.html" class="san_pham_hot">
+                  <a href="#" class="san_pham_hot">
                     <img src="assets/img/img-banner-sale/banner9.webp">
                   </a>
                 </div>
                 <div class="img_content">
-                  <a href="pages/uu_dai.html" class="san_pham_hot">
+                  <a href="#" class="san_pham_hot">
                     <img src="assets/img/img-banner-sale/banner10.webp">
                   </a>
                 </div>
                 <div class="img_content">
-                  <a href="pages/uu_dai.html" class="san_pham_hot">
+                  <a href="pages/topdeal.html#family" class="san_pham_hot">
                     <img src="assets/img/img-banner-sale/banner11.webp">
                   </a>
                 </div>
