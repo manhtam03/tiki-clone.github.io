@@ -1,0 +1,318 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #efefef;
+  line-height: 1.15;
+  text-size-adjust: 100%;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  margin: 0px;
+  display: block;
+}
+main {
+  display: block;
+  unicode-bidi: isolate;
+}
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: calc(-260px + 100vh);
+  padding-top: 20px;
+  padding-bottom: 80px;
+  width: 1270px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container .left {
+  width: 900px;
+  margin-right: 20px;
+}
+.container .right {
+  flex: 1 1 0%;
+  overflow: hidden;
+}
+.left-block {
+  position: relative;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: rgb(255, 255, 255);
+}
+.ship-plan {
+  border-radius: 4px;
+}
+.pay-plan {
+  border-radius: 4px;
+}
+.left-title {
+  color: rgb(56, 56, 61);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0px;
+}
+.style-method-list {
+  position: relative;
+  width: 497px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.ship {
+  display: grid;
+  gap: 20px;
+}
+.coupons {
+  margin-top: 20px;
+}
+.style-method-list .ship-method-list {
+  background: rgb(240, 248, 255);
+  border: 1px solid rgb(194, 225, 255);
+  border-radius: 10px;
+  padding: 16px;
+  display: grid;
+  row-gap: 12px;
+  z-index: 0;
+}
+.style-method-list .methods-arrow {
+  z-index: 1;
+  position: absolute;
+  width: 32px;
+  height: 12px;
+  left: 50%;
+  bottom: 18px;
+  transform: translate(-50%, 100%);
+}
+img {
+  max-width: 100%;
+  border-style: none;
+}
+.radio-button {
+    display: flex;
+    align-items: center;
+}
+.radio-button input[type="radio"] {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+    clip: rect(0px, 0px, 0px, 0px);
+    opacity: 0;
+}
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0px;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0px;
+}
+.radio-button input[type="radio"]:checked + .radio-fake {
+    border-color: rgb(11, 116, 229);
+}
+.radio-button .radio-fake {
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgb(196, 196, 207);
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+    z-index: 1;
+    color: rgb(120, 120, 120);
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.radio-button input[type="radio"]:checked + .radio-fake::before {
+    transform: scale(1);
+}
+.radio-button .radio-fake::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(11, 116, 229);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s ease 0s;
+}
+.radio-button .label {
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+.style-label {
+    cursor: pointer;
+    padding: 4px 0px;
+}
+.style-deli-method {
+    display: flex;
+    align-items: center;
+}
+.style-deli-method .method-logo {
+    margin-right: 4px;
+    object-fit: contain;
+}
+.style-deli-method .method-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(56, 56, 61);
+}
+.ship-pack {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgb(221, 221, 227);
+    margin-top: 20px;
+    padding: 20px 16px 16px;
+    position: relative;
+    display: flex;
+    z-index: 0;
+}
+.pack-lead-time{
+      display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(7, 148, 73);
+    padding: 0px 4px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    transform: translateY(-50%);
+}
+.ship-pack .left-content {
+    margin-right: 46px;
+    max-width: 482px;
+}
+.ship-pack .right-content {
+    flex: 1 1 0%;
+}
+.pack-lead-time .package-title {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+.ship-pack .left-content .package-summary {
+    margin-top: 8px;
+    width: 482px;
+    display: flex;
+    justify-content: space-between;
+}
+.ship-fee-style {
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+.ship-pack .left-content .package-summary .method-text {
+    text-transform: uppercase;
+}
+.ship-fee-style .current-fee {
+    color: rgb(56, 56, 61);
+    font-weight: 500;
+}
+.pack-item-list-style {
+    display: flex;
+    padding: 12px 0px;
+    align-items: center;
+}
+.pack-item-list-style .item-icon {
+    margin-right: 8px;
+    flex-shrink: 0;
+    max-height: 48px;
+}
+.pack-item-list-style .item-info {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(128, 128, 137);
+    flex: 1 1 0%;
+}
+.icon-img {
+    object-fit: contain;
+    display: block;
+}
+.pack-item-list-style .item-info1 {
+    display: flex;
+    margin-bottom: 4px;
+    padding-right: 20px;
+}
+.pack-item-list-style .item-info2 {
+    display: flex;
+    justify-content: space-between;
+}
+.pack-item-list-style .item-info-name {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.pack-item-list-style .item-info-price {
+    color: rgb(56, 56, 61);
+    font-weight: 500;
+}
+.fulfill-style {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    background: rgb(245, 245, 250);
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+.fulfill-style .fulfill-icon {
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+.fulfill-style .fulfill-text {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(128, 128, 137);
+}
+p {
+    margin: 0px 0px 10px;
+}
+.fulfill-style .fulfill-text-warn {
+    font-style: italic;
+}
+.coupons .coupons-heading {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    cursor: pointer;
+}
+.coupons .coupons-heading-title {
+    font-size: 14px;
+    color: rgb(56, 56, 61);
+    display: inline-block;
+    margin-right: 10px;
+}
+.coupons .coupons-heading-hint {
+    font-size: 12px;
+    color: rgb(128, 128, 137);
+    align-items: center;
+    display: flex;
+}
+.pay-plan-title.pay-plan-title {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: baseline;
+}
