@@ -25,7 +25,7 @@ div {
 .container {
   display: flex;
   justify-content: space-between;
-  margin: 50px;
+  margin: 80px;
   width: 1440px;
   padding-left: 24px;
   padding-right: 24px;
@@ -40,9 +40,15 @@ div {
 .middle {
   display: flex;
   flex-direction: column;
-  flex: 1 1 0%;
+  flex: 0 0 584px;
   overflow: hidden;
   gap: 16px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
 }
 
 .middle-list {
@@ -282,12 +288,6 @@ h6 {
   color: rgb(13, 92, 182);
 }
 
-a:link,
-a:visited {
-  color: blue;
-  cursor: pointer;
-}
-
 .review {
   display: flex;
   align-items: center;
@@ -310,44 +310,454 @@ a:visited {
 
 .borderline {
   width: 1px;
-    height: 12px;
-    background-color: rgb(199, 199, 199);
-    margin-left: 8px;
-    margin-right: 8px;
+  height: 12px;
+  background-color: rgb(199, 199, 199);
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .botproduct-info .price {
   display: flex;
+  align-items: center;
+  color: rgb(39, 39, 42);
+  gap: 8px;
+}
+
+.botproduct-info .now-price {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+sup {
+  top: -0.5em;
+  vertical-align: super;
+  font-size: smaller;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.botproduct-info .discount {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  padding: 0px 4px;
+  background: rgb(245, 245, 250);
+  border-radius: 8px;
+  color: rgb(39, 39, 42);
+}
+
+.transport {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgb(39, 39, 42);
+}
+
+.transport-info {
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    padding: 8px 0px;
+    border-bottom: 1px solid rgb(235, 235, 240);
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
     color: rgb(39, 39, 42);
     gap: 8px;
 }
 
-.botproduct-info .now-price {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 150%;
+.transport-info:last-of-type {
+    border-bottom: none;
 }
 
-sup {
-    top: -0.5em;
-    vertical-align: super;
-    font-size: smaller;
-}
-
-sub, sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-.botproduct-info .discount{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    padding: 0px 4px;
-    background: rgb(245, 245, 250);
-    border-radius: 8px;
+.location {
     color: rgb(39, 39, 42);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    width: 100%;
+}
+
+.ship {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    gap: 8px;
+}
+
+.ship .ship-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: relative;
+    margin-right: 12px;
+    z-index: 1;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(120, 120, 120);
+    width: 100%;
+}
+
+.ship .ship-info:last-child {
+    margin: 0px;
+}
+
+.ship .topship-info {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.ship .botship-info {
+    display: flex;
+}
+
+.ship .ship-logo {
+    vertical-align: middle;
+    line-height: 0;
+}
+
+.ship .ship-highlight {
+    font-size: 14px;
+    line-height: 150%;
+    color: rgb(39, 39, 42);
+    margin-left: 8px;
+}
+
+.ship .ship-fee {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(128, 128, 137);
+    font-style: normal;
+}
+
+small {
+    font-size: 80%;
+}
+
+
+
+.compare {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  cursor: pointer;
+  color: rgb(128, 128, 137);
+  text-decoration: underline;
+}
+
+.seller {
+  display: flex;
+  padding-bottom: 12px;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid rgb(235, 235, 240);
+  justify-content: space-between;
+}
+
+.buy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chat {
+  display: flex;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgb(221, 221, 227);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: rgb(39, 39, 42);
+}
+
+.seller-info {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.seller-name-style {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: rgb(36, 36, 36);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.seller-name-style > a {
+  display: flex;
+  flex: 1 1 0%;
+  gap: 4px;
+  align-items: center;
+}
+
+.seller-name-style > a > span {
+  color: rgb(36, 36, 36);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.seller-info .badge {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  color: rgb(39, 39, 42);
+  white-space: nowrap;
+}
+
+.seller-info .badge:first-of-type::before {
+  display: none;
+}
+
+.seller-info .badge::before {
+  content: " ";
+  width: 1px;
+  height: 12px;
+  background: rgb(235, 235, 240);
+  display: block;
+  margin-right: 4px;
+}
+
+.seller-info .badge.shop-rating {
+  flex-shrink: 0;
+}
+
+.seller-info .badge > .title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.seller-info .badge > .sub-title {
+  color: rgb(128, 128, 137);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.seller-info .badge > .title > span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.chat > img {
+  width: 20px;
+  height: 20px;
+  max-width: fit-content;
+}
+
+.count {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.buy .group-button {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px;
+}
+
+.quantity {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.quantity .label {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0px;
+}
+
+.quantity .group-input {
+  display: flex;
+  align-items: center;
+}
+
+.quantity .group-input button {
+  display: flex;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity .group-input button,
+.quantity .group-input input {
+  height: 32px;
+  color: rgb(36, 36, 36);
+  font-size: 14px;
+  text-align: center;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgb(166, 166, 176);
+  background: white;
+}
+
+.quantity .disable {
+  pointer-events: none !important;
+  border: 1px solid
+    var(--button-neutral-outlined-border-disabled, rgba(196, 196, 207, 0.3)) !important;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  appearance: button;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0px;
+}
+
+.quantity .group-input input {
+  width: 40px;
+  margin: 0px 4px;
+}
+
+.quantity .disable > img {
+  opacity: 0.4;
+}
+
+.count-now {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: rgb(39, 39, 42);
+}
+
+.count-money {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.buy-now {
+  background: rgb(255, 66, 78);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+  height: 40px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.add-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  white-space: nowrap;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 150%;
+  color: rgb(10, 104, 255);
+  border: 1px solid rgb(10, 104, 255);
+  border-radius: 4px;
+}
+
+.add-buy > span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.sliders {
+  width: 100%;
+  position: relative;
+}
+
+.sliders .content {
+  overflow: hidden;
+}
+
+.sliders .content .slider {
+  display: inline-flex;
+  min-width: 100%;
+}
+
+.slide-content > * {
+  width: 100%;
+}
+
+.banner {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slide-img {
+  object-fit: contain;
+  display: block;
 }
