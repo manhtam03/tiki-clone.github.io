@@ -10,14 +10,16 @@ setInterval(updatePlaceholder, 5000);
 updatePlaceholder();
 
 const boxsearch = document.getElementById('box-search');
-
+const overlay = document.getElementById('overlay');
 function showBoxSearch(){
     boxsearch.style.display = 'block';
+    overlay.style.display = 'block';
 }
 
 document.addEventListener('click', function(event) {
     if (!boxsearch.contains(event.target) && !searchInput.contains(event.target)) {
         boxsearch.style.display = 'none';
+        overlay.style.display = 'none';
     }
 })
 
