@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
         reloadSlider();
     }
 
-    // let refreshSlider = setInterval(() => { next.click() }, 5000);
     function reloadSlider() {
         let checkLeft = items[active].offsetLeft;
         list.style.left = -checkLeft + 'px';
@@ -47,8 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Phần tử dot tại vị trí active không tồn tại.');
         }
 
-        // clearInterval(refreshSlider);
-        // refreshSlider = setInterval(() => { next.click() }, 5000);
     }
 });
 
@@ -71,5 +68,13 @@ function showLoading() {
     viewMoreButton.style.display = 'none';
 
     var homeContentMore  = document.getElementById('td-box-more');
+    homeContentMore.style.display = 'flex';
+}  
+
+function showLoading1() {
+    var viewMoreButton = document.getElementById('viewMoreButton1');
+    viewMoreButton.style.display = 'none';
+
+    var homeContentMore  = document.getElementById('td-box-more1');
     homeContentMore.style.display = 'flex';
 }  
