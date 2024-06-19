@@ -269,3 +269,50 @@ button, input, optgroup, select, textarea {
     color: rgb(56, 56, 61);
     font-weight: 500;
 }
+.fulfill-style {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    background: rgb(245, 245, 250);
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+.fulfill-style .fulfill-icon {
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+.fulfill-style .fulfill-text {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(128, 128, 137);
+}
+p {
+    margin: 0px 0px 10px;
+}
+.fulfill-style .fulfill-text-warn {
+    font-style: italic;
+}
+.coupons .coupons-heading {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    cursor: pointer;
+}
+.coupons .coupons-heading-title {
+    font-size: 14px;
+    color: rgb(56, 56, 61);
+    display: inline-block;
+    margin-right: 10px;
+}
+.coupons .coupons-heading-hint {
+    font-size: 12px;
+    color: rgb(128, 128, 137);
+    align-items: center;
+    display: flex;
+}
+.pay-plan-title.pay-plan-title {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: baseline;
+}
