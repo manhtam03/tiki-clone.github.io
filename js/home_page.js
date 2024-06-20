@@ -4,7 +4,7 @@ function showLoading() {
     viewMoreButton.style.display = 'none';
 
     var homeContentMore  = document.getElementById('home_tab_content_more');
-    homeContentMore.style.display = 'grid';
+    homeContentMore.style.display = 'flex';
 }
 
 
